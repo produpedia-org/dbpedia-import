@@ -1,0 +1,9 @@
+{
+  "name": "produpedia_mapping_generator",
+  "version": "0.1.0",
+  "author": "Philip Waritschlager <philip@waritschlager.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffeescript": "^2.4.1"
+  }
+}
