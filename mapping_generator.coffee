@@ -45,7 +45,7 @@ investigate_identifier = (predicate, object) =>
 	# console.dir results
 	for { subject } from results
 		console.log "### <#{yellow subject}> ###"
-		console.log italic "Find more out about it (multiple choices possible): its [p]roperties, as [o]bject, [nothing] not relevant? "
+		console.log italic "Find more out about it (multiple choices possible): its [p]roperties, as [o]bject, [nothing] irrelevant? "
 		choice = await read_line ''
 		if choice.includes 'p'
 			open_subjects.add subject
@@ -75,7 +75,7 @@ investigate_subject = (subject) =>
 		ask_for_identifier = (object) =>
 			console.debug gray dim "(ask_for_identifier)"
 			console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
-			console.log italic "This statement is: [d]efinite, [r]elevant, [i]rrelevant but [i]nvestigate, [nothing] not relevant? "
+			console.log italic "This statement is: [d]efinite, [r]elevant, irrelevant but [i]nvestigate, [nothing] irrelevant? "
 			choice = await read_line ''
 			switch choice
 				when 'd'
@@ -94,15 +94,16 @@ investigate_subject = (subject) =>
 			console.log "### Statement: ?subject <#{yellow predicate}> ?object ###"
 			console.log gray "Sample objects: " +
 				green "#{results[0..5].map 'object'}, #{results.length} in total"
-			console.log italic "This predicate is: [i] investigate: ask again seperately for all #{results.length} identifiers, [nothing] not relevant? "
+			console.log italic "This predicate is: [r]elevant, [i] investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
 			choice = await read_line ''
 			switch choice
 				when 'i'
 					for result from results
 						await ask_for_identifier result.object
+				when 'r'
+					relevant_predicates.push predicate
 				else
 					irrelevant_predicates.push predicate
-		
 		checked_predicates.push predicate
 	checked_subjects.push subject
 
@@ -122,9 +123,9 @@ investigate_object = (object) =>
 		, {}
 	for predicate, results of predicate_infos
 		console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
-		console.log gray "Used i.a. by..."
-		console.log green "#{results[0..5].map 'subject'}, #{results.length} in total"
-		console.log italic "This statement is: [d]efinite, [r]elevant, [i]rrelevant but [i]nvestigate, [nothing] not relevant? "
+		console.log gray "?subject is i.a..." +
+			green "#{results[0..5].map 'subject'}, #{results.length} in total"
+		console.log italic "This statement is: [d]efinite, [r]elevant, irrelevant but [i]nvestigate, [nothing] irrelevant? "
 		choice = await read_line ''
 		switch choice
 			when 'd'
