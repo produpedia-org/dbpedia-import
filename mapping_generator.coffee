@@ -19,11 +19,10 @@ TODOs
 	  or other way round, subtraction so all in best possible quality but no dups?
 	  or maybe work with mappings only
 - when querying: label etc @lang?
-- definite -> defining
 - find and add predicates that always apply to relevant_predicates
 - dbp:imagesize??
 - range vs array vs single value
-- add all definite_identifiers to relevant_predicates, e.g. <form>
+- add all defining_identifiers to relevant_predicates, e.g. <form>
 
 strategy:
 - mapping generator on 2016
@@ -42,7 +41,7 @@ open_subjects = new Set
 open_identifiers = []
 
 # d, r, i
-definite_identifiers = [] # identifier == predicate-object combo
+defining_identifiers = [] # identifier == predicate-object combo
 relevant_predicates = []
 irrelevant_predicates = []
 
@@ -63,9 +62,9 @@ ask_for_identifier = (subjects, predicate, object) =>
 	choice = await read_line '> '
 	switch choice
 		when 'd'
-			# definite_identifiers["#{predicate} #{object}"]
-			# definite_identifiers[predicate] = object
-			definite_identifiers.push { predicate, object }
+			# defining_identifiers["#{predicate} #{object}"]
+			# defining_identifiers[predicate] = object
+			defining_identifiers.push { predicate, object }
 			checked_identifiers.push "#{predicate} #{object}"
 			# open_identifiers[predicate] = object # is already in open_subjects
 			if subjects
@@ -85,7 +84,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 		when 'ii'
 			open_identifiers.push { predicate, object }
 			# note: there is no irrelevant_identifiers. any remaining identifier that
-			# is not definite is automatically irrelevant.
+			# is not defining is automatically irrelevant.
 			checked_identifiers.push "#{predicate} #{object}"
 		when 's'
 			# same
@@ -176,7 +175,7 @@ investigate_object = (object) =>
 write_out = =>
 	console.debug gray dim 'write out to file...'
 	end_result = {
-		definite_identifiers, relevant_predicates, irrelevant_predicates
+		defining_identifiers, relevant_predicates, irrelevant_predicates
 		# dev
 		checked: { checked_identifiers, checked_objects, checked_predicates, checked_subjects }
 		open:
