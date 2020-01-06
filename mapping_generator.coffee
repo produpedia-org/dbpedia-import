@@ -15,15 +15,34 @@ import query from './query.js'
 
 ###
 TODOs
-when querying: label etc @lang?
+- omit mappingbased? (/ontology/* for all s p o), as this parses everything anyway. would there be any values lost by doing so?
+	  or other way round, subtraction so all in best possible quality but no dups?
+	  or maybe work with mappings only
+- when querying: label etc @lang?
+- definite -> defining
+- find and add predicates that always apply to relevant_predicates
+- dbp:imagesize??
+- range vs array vs single value
+- add all definite_identifiers to relevant_predicates, e.g. <form>
+
+strategy:
+- mapping generator on 2016
+- mapping generator on latest: dbpedia live or better, latest databus dumps
+      merge properly
+- get data as table
+- mapping transformer: automizable stuff, e.g. same-as-ize predicates
+- commit data on new branch
+- manual transformations
+- commit/merge data onto dbpedia branch
+- merge dbpedia into master
 ###
 
 open_objects = new Set [ "http://dbpedia.org/resource/Smartphone" ]
 open_subjects = new Set
-open_identifiers = {}
+open_identifiers = []
 
 # d, r, i
-definite_identifiers = {} # identifier == predicate-object combo
+definite_identifiers = [] # identifier == predicate-object combo
 relevant_predicates = []
 irrelevant_predicates = []
 
@@ -34,6 +53,46 @@ checked_subjects = []
 checked_predicates = []
 checked_objects = []
 checked_identifiers = []
+
+ask_for_identifier = (subjects, predicate, object) =>
+	console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
+	if subjects
+		console.log gray "?subject is i.a. ..." +
+			green "#{subjects[0..5]}, #{subjects.length} in total"
+	console.log italic "This statement is: [d]efinite, [nothing] predicate is irrelevant, predicate is [r]elevant, [i] predicate is irrelevant but investigate, [ii] only statement irrelevant but investigate, [s] only statement is irrelevant. ? "
+	choice = await read_line '> '
+	switch choice
+		when 'd'
+			# definite_identifiers["#{predicate} #{object}"]
+			# definite_identifiers[predicate] = object
+			definite_identifiers.push { predicate, object }
+			checked_identifiers.push "#{predicate} #{object}"
+			# open_identifiers[predicate] = object # is already in open_subjects
+			if subjects
+				for subject from subjects
+					if not checked_subjects.includes subject
+						open_subjects.add subject
+						# checked_subjects.push subject
+		when 'r'
+			relevant_predicates.push predicate
+			checked_predicates.push predicate
+		when 'i'
+			irrelevant_predicates.push predicate
+			# [i]nvestigate this statement==identifier, meaning
+			# have a look at the possible respective subjects
+			open_identifiers.push { predicate, object }
+			checked_predicates.push predicate
+		when 'ii'
+			open_identifiers.push { predicate, object }
+			# note: there is no irrelevant_identifiers. any remaining identifier that
+			# is not definite is automatically irrelevant.
+			checked_identifiers.push "#{predicate} #{object}"
+		when 's'
+			# same
+			checked_identifiers.push "#{predicate} #{object}"
+		else
+			irrelevant_predicates.push predicate
+			checked_predicates.push predicate
 
 investigate_identifier = (predicate, object) =>
 	console.debug gray "investigate identifier: ?subject <#{predicate}> <#{object}>"
@@ -46,7 +105,7 @@ investigate_identifier = (predicate, object) =>
 	for { subject } from results
 		console.log "### <#{yellow subject}> ###"
 		console.log italic "Find more out about it (multiple choices possible): its [p]roperties, as [o]bject, [nothing] irrelevant? "
-		choice = await read_line ''
+		choice = await read_line '> '
 		if choice.includes 'p'
 			open_subjects.add subject
 		else
@@ -55,7 +114,7 @@ investigate_identifier = (predicate, object) =>
 			open_objects.add subject
 		else
 			checked_objects.push subject
-	checked_identifiers.push predicate + " " + object
+	checked_identifiers.push "#{predicate} #{object}"
 
 investigate_subject = (subject) =>
 	console.debug gray "investigate subject: <#{subject}> ?predicate ?object"
@@ -67,44 +126,31 @@ investigate_subject = (subject) =>
 	# console.dir results
 	predicate_infos = results
 		.filter (result) => not checked_predicates.includes result.predicate
+		.filter (result) => not checked_identifiers.includes "#{result.predicate} #{result.object}"
 		.reduce (all, result) =>
 			all[result.predicate] = [ ...(all[result.predicate] or []), result ]
 			all
 		, {}
 	for predicate, results of predicate_infos
-		ask_for_identifier = (object) =>
-			console.debug gray dim "(ask_for_identifier)"
-			console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
-			console.log italic "This statement is: [d]efinite, [r]elevant, irrelevant but [i]nvestigate, [nothing] irrelevant? "
-			choice = await read_line ''
-			switch choice
-				when 'd'
-					definite_identifiers[predicate] = results[0].object
-				when 'r'
-					relevant_predicates.push predicate
-				when 'i'
-					irrelevant_predicates.push predicate
-					open_identifiers[predicate] = object
-				else
-					irrelevant_predicates.push predicate
 		choice = ''
 		if results.length == 1
-			await ask_for_identifier results[0].object
+			await ask_for_identifier null, predicate, results[0].object
 		else
 			console.log "### Statement: ?subject <#{yellow predicate}> ?object ###"
 			console.log gray "Sample objects: " +
 				green "#{results[0..5].map 'object'}, #{results.length} in total"
-			console.log italic "This predicate is: [r]elevant, [i] investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
-			choice = await read_line ''
+			console.log italic "This predicate is: [r]elevant, [t]raverse investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
+			choice = await read_line '> '
 			switch choice
-				when 'i'
+				when 't'
 					for result from results
-						await ask_for_identifier result.object
+						await ask_for_identifier null, predicate, result.object
 				when 'r'
 					relevant_predicates.push predicate
+					checked_predicates.push predicate
 				else
 					irrelevant_predicates.push predicate
-		checked_predicates.push predicate
+					checked_predicates.push predicate
 	checked_subjects.push subject
 
 investigate_object = (object) =>
@@ -117,38 +163,34 @@ investigate_object = (object) =>
 	# console.dir results
 	predicate_infos = results
 		.filter (result) => not checked_predicates.includes result.predicate
+		.filter (result) => not checked_identifiers.includes "#{result.predicate} #{object}"
 		.reduce (all, result) =>
 			all[result.predicate] = [ ...(all[result.predicate] or []),  result ]
 			all
 		, {}
 	for predicate, results of predicate_infos
-		console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
-		console.log gray "?subject is i.a..." +
-			green "#{results[0..5].map 'subject'}, #{results.length} in total"
-		console.log italic "This statement is: [d]efinite, [r]elevant, irrelevant but [i]nvestigate, [nothing] irrelevant? "
-		choice = await read_line ''
-		switch choice
-			when 'd'
-				# definite_identifiers["#{predicate} #{object}"]
-				definite_identifiers[predicate] = object
-				# open_identifiers[predicate] = object # is already in open_subjects
-				for result from results
-					if not checked_subjects.includes result.subject
-						open_subjects.add result.subject
-						# checked_subjects.push result.subject
-			when 'r'
-				relevant_predicates.push predicate
-			when 'i'
-				irrelevant_predicates.push predicate
-				open_identifiers[predicate] = object
-			else
-				irrelevant_predicates.push predicate
-		checked_predicates.push predicate
+		subjects = results.map 'subject'
+		await ask_for_identifier subjects, predicate, object
 	checked_objects.push object
-				
+
+write_out = =>
+	console.debug gray dim 'write out to file...'
+	end_result = {
+		definite_identifiers, relevant_predicates, irrelevant_predicates
+		# dev
+		checked: { checked_identifiers, checked_objects, checked_predicates, checked_subjects }
+		open:
+			open_identifiers: open_identifiers
+			open_objects: [...open_objects]
+			open_subects: [...open_subjects]
+	}
+	outfile = "tmp/mapping_#{Date.now()}.json"
+	await write_file outfile, JSON.stringify end_result
+
 do =>
 	investigate = true
 	while investigate
+		await write_out()
 		console.debug gray 'investigate: next iteration'
 		investigate = false
 		for object from open_objects
@@ -158,10 +200,11 @@ do =>
 				await investigate_object object
 			else
 				console.warn magenta "omitting already checked object #{object}"
-		for predicate, object of open_identifiers
+		for identifier of open_identifiers
 			investigate = true
-			delete open_identifiers[predicate]
-			if not checked_identifiers.includes(predicate + " " + object)
+			{ predicate, object } = identifier
+			delete open_identifiers[identifier]
+			if not checked_identifiers.includes("#{predicate} #{object}")
 				await investigate_identifier predicate, object
 		for subject from open_subjects
 			investigate = true
@@ -170,8 +213,5 @@ do =>
 				await investigate_subject subject
 			else
 				console.warn magenta "omitting already checked object #{object}"
-	console.log 'finished. writing to file...'
-	end_result = { definite_identifiers, relevant_predicates, irrelevant_predicates }
-	# outfile = "mapping_#{Date.now()}.json"
-	outfile = 'mapping.json'
-	await write_file outfile, JSON.stringify end_result
+	console.log 'finished'
+	await write_out()

@@ -19,7 +19,9 @@ export default (query) =>
 	if not json
 		console.error red await resp.text()
 		throw new Error 'is not json'
-	json.results.bindings.map (row) =>
+	results = json.results.bindings.map (row) =>
 		subject: row.subject?.value
 		predicate: row.predicate?.value
 		object: row.object?.value
+	console.debug gray "#{results.length} results returned"
+	results
