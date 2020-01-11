@@ -1,4 +1,5 @@
-import { gray, red } from "https://deno.land/std/fmt/colors.ts"
+import { gray, red, magenta } from "https://deno.land/std/fmt/colors.ts"
+import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
 
 prefixes = """
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -9,12 +10,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 export default (query) =>
 	console.debug gray 'querying...'
-	query = encodeURIComponent "#{prefixes}\n#{query}"
 	format = encodeURIComponent "application/sparql-results+json"
 	# format = encodeURIComponent "text/csv"
 	timeout = 10000
 	default_graph_uri = encodeURIComponent "http://dbpedia.org"
-	resp = await fetch "https://dbpedia.org/sparql?default-graph-uri=#{default_graph_uri}&query=#{query}&format=#{format}&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=#{timeout}&debug=on&run=+Run+Query+"
+	query = encodeURIComponent "#{prefixes}\n#{query}"
+	
+	resp = await fetch "https://dbpedia.org/sparql?default-graph-uri=#{default_graph_uri}&format=#{format}&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=#{timeout}&debug=on&run=+Run+Query+",
+		method: 'POST'
+		body: "query=#{query}"
+		headers:
+			'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+
 	json = try await resp.json()
 	if not json
 		console.error red await resp.text()
@@ -24,4 +31,9 @@ export default (query) =>
 		predicate: row.predicate?.value
 		object: row.object?.value
 	console.debug gray "#{results.length} results returned"
+	
+	if resp.headers.has 'X-SPARQL-MaxRows'
+		console.warn magenta "X-SPARQL-MaxRows is set: Return size exceeded return size. This output is truncated."
+		await readLine 'continue...'
+	
 	results

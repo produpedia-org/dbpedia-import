@@ -23,6 +23,9 @@ TODOs
 - dbp:imagesize??
 - range vs array vs single value
 - add all defining_identifiers to relevant_predicates, e.g. <form>
+- from finished mappings, which definings can be removed? statisticssss
+- skip option e.g. while iterating over subject props when subject not valid
+- undefining_identifiers, undefining_predicates
 
 strategy:
 - mapping generator on 2016
@@ -78,7 +81,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 			if not subjects
 				console.log 'QUERYING SUBJECTS FOR NEW DEFINING IDENTIFIER, ALL TO BE ADDED TO OPEN_SUBJECTS'
 				results = await query """
-				select * where {
+				select ?subject where {
 					?subject <#{predicate}> <#{object}>
 				}"""
 				subjects = results.map 'subject'
@@ -108,7 +111,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 investigate_identifier = (predicate, object) =>
 	console.debug gray "investigate identifier: ?subject <#{predicate}> <#{object}>"
 	results = await query """
-	select * where {
+	select ?subject where {
 		?subject <#{predicate}> <#{object}>
 	}
 	# limit 2"""
@@ -216,6 +219,9 @@ do =>
 		# for each defining identifier, get all subjects and recheck them,
 		# in case new attributes were added. this is somewhat the automation of
 		# bulk investigate_identifier
+		
+		# v1: all at once
+		####
 		query_conditions = defining_identifiers
 			.map (identifier) =>
 				"{ ?subject <#{identifier.predicate}> #{
@@ -225,9 +231,28 @@ do =>
 					else "\"#{identifier.object}\"^^rdf:langString"
 				} }"
 			.join "\nUNION\n"
-		results = await query "select ?subject where { #{query_conditions} }"
-		console.debug "Found #{results.length} subjects matching existing defining_identifiers that will now be queried"
+		results = await query "select distinct ?subject where { #{query_conditions} }"
 		open_subjects = new Set results.map 'subject'
+		####
+
+		# v2: one after another
+		###
+		open_subjects = new Set
+		console.debug dim "Finding all subjects for existing defining_identifiers..."
+		for identifier from defining_identifiers
+			query_condition = "?subject <#{identifier.predicate}> #{
+					if identifier.object.match /^http:\/\/dbpedia\.org/
+						"<#{identifier.object}>"
+					# TODO:
+					else "\"#{identifier.object}\"^^rdf:langString"
+			}"
+			results = await query "select ?subject where { #{query_condition} }"
+			subjects = results.map 'subject'
+			for subject from subjects
+				open_subjects.add subject
+		###
+
+		console.debug dim "Found #{open_subjects.size} subjects matching existing defining_identifiers that will now be queried"
 		checked_subjects = [] 
 		#
 		checked_predicates = [ ...relevant_predicates, ...irrelevant_predicates ]
