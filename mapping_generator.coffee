@@ -7,10 +7,10 @@
 import './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
 # import { input } from 'https://raw.githubusercontent.com/johnsonjo4531/read_lines/v2.1.0/input.ts'
-import { input as read_line } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
-# import read_file from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
-import read_file from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
-write_file = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
+import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
+# import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
+import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
+writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
 import query from './query.js'
 
 ###
@@ -36,12 +36,13 @@ strategy:
 - merge dbpedia into master
 ###
 
-open_objects = new Set [ "http://dbpedia.org/resource/Smartphone" ]
 open_subjects = new Set
+open_objects = new Set
 open_identifiers = []
 
 # d, r, i
 defining_identifiers = [] # identifier == predicate-object combo
+irrelevant_identifiers = []
 relevant_predicates = []
 irrelevant_predicates = []
 
@@ -58,20 +59,32 @@ ask_for_identifier = (subjects, predicate, object) =>
 	if subjects
 		console.log gray "?subject is i.a. ..." +
 			green "#{subjects[0..5]}, #{subjects.length} in total"
-	console.log italic "This statement is: [d]efinite, [nothing] predicate is irrelevant, predicate is [r]elevant, [i] predicate is irrelevant but investigate, [ii] only statement irrelevant but investigate, [s] only statement is irrelevant. ? "
-	choice = await read_line '> '
+	console.log italic "This statement is: [d]efining, [nothing] predicate is irrelevant, predicate is [r]elevant, [i] predicate is irrelevant but investigate, [ii] only statement irrelevant but investigate, [s] only statement is irrelevant. ? "
+	defining = defining_identifiers.find (i) => i.predicate == predicate and i.object == object
+	relevant = relevant_predicates.includes predicate
+	irrelevant_identifier = irrelevant_identifiers.find (i) => i.predicate == predicate and i.object == object
+	irrelevant = irrelevant_predicates.includes predicate
+	if defining or relevant or irrelevant_identifier or irrelevant
+		console.log dim "Already saved as #{if defining then "defining predicate"}, #{if relevant then "relevant predicate"}, #{if irrelevant_identifier then "irrelevant statement"}, #{if irrelevant then "irrelevant predicate"}."
+	choice = await readLine '> '
 	switch choice
 		when 'd'
 			# defining_identifiers["#{predicate} #{object}"]
 			# defining_identifiers[predicate] = object
 			defining_identifiers.push { predicate, object }
+			relevant_predicates.push predicate
 			checked_identifiers.push "#{predicate} #{object}"
 			# open_identifiers[predicate] = object # is already in open_subjects
-			if subjects
-				for subject from subjects
-					if not checked_subjects.includes subject
-						open_subjects.add subject
-						# checked_subjects.push subject
+			if not subjects
+				console.log 'QUERYING SUBJECTS FOR NEW DEFINING IDENTIFIER, ALL TO BE ADDED TO OPEN_SUBJECTS'
+				results = await query """
+				select * where {
+					?subject <#{predicate}> <#{object}>
+				}"""
+				subjects = results.map 'subject'
+			for subject from subjects
+				if not checked_subjects.includes subject
+					open_subjects.add subject
 		when 'r'
 			relevant_predicates.push predicate
 			checked_predicates.push predicate
@@ -82,12 +95,11 @@ ask_for_identifier = (subjects, predicate, object) =>
 			open_identifiers.push { predicate, object }
 			checked_predicates.push predicate
 		when 'ii'
+			irrelevant_identifiers.push { predicate, object }
 			open_identifiers.push { predicate, object }
-			# note: there is no irrelevant_identifiers. any remaining identifier that
-			# is not defining is automatically irrelevant.
 			checked_identifiers.push "#{predicate} #{object}"
 		when 's'
-			# same
+			irrelevant_identifiers.push { predicate, object }
 			checked_identifiers.push "#{predicate} #{object}"
 		else
 			irrelevant_predicates.push predicate
@@ -104,7 +116,7 @@ investigate_identifier = (predicate, object) =>
 	for { subject } from results
 		console.log "### <#{yellow subject}> ###"
 		console.log italic "Find more out about it (multiple choices possible): its [p]roperties, as [o]bject, [nothing] irrelevant? "
-		choice = await read_line '> '
+		choice = await readLine '> '
 		if choice.includes 'p'
 			open_subjects.add subject
 		else
@@ -139,7 +151,9 @@ investigate_subject = (subject) =>
 			console.log gray "Sample objects: " +
 				green "#{results[0..5].map 'object'}, #{results.length} in total"
 			console.log italic "This predicate is: [r]elevant, [t]raverse investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
-			choice = await read_line '> '
+			if relevant_predicates.includes predicate
+				console.log dim "Already saved as relevant predicate"
+			choice = await readLine '> '
 			switch choice
 				when 't'
 					for result from results
@@ -175,7 +189,7 @@ investigate_object = (object) =>
 write_out = =>
 	console.debug gray dim 'write out to file...'
 	end_result = {
-		defining_identifiers, relevant_predicates, irrelevant_predicates
+		irrelevant_identifiers, defining_identifiers, relevant_predicates, irrelevant_predicates
 		# dev
 		checked: { checked_identifiers, checked_objects, checked_predicates, checked_subjects }
 		open:
@@ -184,9 +198,55 @@ write_out = =>
 			open_subects: [...open_subjects]
 	}
 	outfile = "tmp/mapping_#{Date.now()}.json"
-	await write_file outfile, JSON.stringify end_result
+	await writeFile outfile, JSON.stringify end_result
 
 do =>
+
+	start_resource = Deno.args[1]
+	if not start_resource
+		console.error 'Please pass the case-sensitive starting object resource as argument, e.g. "Smartphone" for dbr:Smartphone'
+		Deno.exit(1)
+
+	try existing_mapping = JSON.parse await readFile "mappings/mapping-dbr:#{start_resource}.json"
+
+	### minimalistic approach ###
+	##
+	if existing_mapping
+		{ defining_identifiers, relevant_predicates, irrelevant_predicates, irrelevant_identifiers } = existing_mapping
+		# for each defining identifier, get all subjects and recheck them,
+		# in case new attributes were added. this is somewhat the automation of
+		# bulk investigate_identifier
+		query_conditions = defining_identifiers
+			.map (identifier) =>
+				"{ ?subject <#{identifier.predicate}> #{
+					if identifier.object.match /^http:\/\/dbpedia\.org/
+						"<#{identifier.object}>"
+					# TODO:
+					else "\"#{identifier.object}\"^^rdf:langString"
+				} }"
+			.join "\nUNION\n"
+		results = await query "select ?subject where { #{query_conditions} }"
+		console.debug "Found #{results.length} subjects matching existing defining_identifiers that will now be queried"
+		open_subjects = new Set results.map 'subject'
+		checked_subjects = [] 
+		#
+		checked_predicates = [ ...relevant_predicates, ...irrelevant_predicates ]
+		# checked_objects =
+		checked_identifiers = [ ...defining_identifiers, ...irrelevant_identifiers ]
+			.map (identifier) => "#{identifier.predicate} #{identifier.object}"
+		open_identifiers = []
+		open_objects = new Set
+	else
+		open_objects = new Set [ "http://dbpedia.org/resource/#{start_resource}" ]
+	##
+	### full approach ###
+	###
+	# in this case, values from existing mapping will simply be shown again in prompts
+	if existing_mapping
+		{ defining_identifiers, relevant_predicates, irrelevant_predicates, irrelevant_identifiers } = existing_mapping
+	open_objects = new Set [ "http://dbpedia.org/resource/#{start_resource}" ]
+	###
+
 	investigate = true
 	while investigate
 		await write_out()
