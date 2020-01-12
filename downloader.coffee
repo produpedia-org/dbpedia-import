@@ -20,8 +20,13 @@ do =>
 		Deno.exit 2
 		
 	{ defining_identifiers, relevant_predicates } = existing_mapping
+
+	relevant_predicates.push 'http://www.w3.org/2000/01/rdf-schema#label'
+
+	data = []
 	
-	query_conditions = defining_identifiers
+	console.debug dim "get all subjects"
+	subject_query_conditions = defining_identifiers
 		.map (identifier) =>
 			"{ ?subject <#{identifier.predicate}> #{
 				if identifier.object.match /^http:\/\/dbpedia\.org/
@@ -30,24 +35,37 @@ do =>
 				else "\"#{identifier.object}\"^^rdf:langString"
 			} }"
 		.join "\nUNION\n"
-	query_optionals = relevant_predicates
-		.map (predicate) =>
-			varname = predicate.replace /[^a-zA-Z_0-9]/g, '_'
-			"\nOPTIONAL { ?subject <#{predicate}> ?#{varname} } "
-		.join ''
-	results = await query """
-		select * where { 
-			{
-				select distinct ?subject where { 
-					#{query_conditions} 
-				}
-			} 
-			#{query_optionals}
-		}
-		LIMIT 10"""
+	all_results = await query "select distinct ?subject where { #{subject_query_conditions} }" # + "LIMIT 5"
 
-	console.debug dim "#{results.length} rows"
-	
-	console.debug gray dim 'write out to file...'
-	outfile = "tmp/data_#{Date.now()}.json"
-	await writeFile outfile, JSON.stringify results
+	console.debug "get each relevant values"
+	for { subject }, i in all_results
+		data_row = {}
+		data.push data_row
+		data_row.resource = subject
+		console.debug dim "#{i} / #{all_results.length}"
+		subject_results = await query "select * where { <#{subject}> ?predicate ?object }"
+		for identifier from subject_results
+			if relevant_predicates.includes identifier.predicate
+				if data_row[identifier.predicate]
+					data_row[identifier.predicate] = data_row[identifier.predicate] + "," + identifier.object
+				else
+					data_row[identifier.predicate] = identifier.object
+
+	csv_escape = (v) =>
+		v = v.replace /"/g, '""'
+		"\"#{v}\""
+	columns = [ 'resource', ...relevant_predicates ]
+	csv = columns.map((col) => csv_escape(col)).join(',') + '\n' +
+		data
+			.map (row) =>
+				columns
+					.map (col) =>
+						v = row[col] or ''
+						csv_escape v
+					.join ','
+			.join '\n'
+
+	console.debug gray dim 'write out json...'
+	await writeFile "data/data-#{resource_name}.json", JSON.stringify data
+	console.debug gray dim 'write out to csv...'
+	await writeFile "data/data-#{resource_name}.csv", csv
