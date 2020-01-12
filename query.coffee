@@ -27,9 +27,9 @@ export default (query) =>
 		console.error red await resp.text()
 		throw new Error 'is not json'
 	results = json.results.bindings.map (row) =>
-		subject: row.subject?.value
-		predicate: row.predicate?.value
-		object: row.object?.value
+		subject: row.subject?.value + if row.subject?['xml:lang'] then "@#{row.subject?['xml:lang']}" else ''
+		predicate: row.predicate?.value + if row.predicate?['xml:lang'] then "@#{row.predicate?['xml:lang']}" else ''
+		object: row.object?.value + if row.object?['xml:lang'] then "@#{row.object?['xml:lang']}" else ''
 	console.debug gray "#{results.length} results returned"
 	
 	if resp.headers.has 'X-SPARQL-MaxRows'
