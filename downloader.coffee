@@ -35,14 +35,23 @@ do =>
 				else "\"#{identifier.object}\"^^rdf:langString"
 			} }"
 		.join "\nUNION\n"
-	all_results = await query "select distinct ?subject where { #{subject_query_conditions} }" # + "LIMIT 5"
+	all_results = await query """
+		select distinct ?subject ?redirectsTo where {
+			#{subject_query_conditions}
+			OPTIONAL { ?subject dbo:wikiPageRedirects ?redirectsTo }
+		}"""
+	subjects = all_results
+		# todo do this in the query directly? I didnt manage to :(
+		.map (r) => r.redirectsTo or r.subject
+	# filter out duplicates from redirects
+	subjects = [...new Set(subjects)]
 
 	console.debug "get each relevant values"
-	for { subject }, i in all_results
+	for subject, i in subjects
 		data_row = {}
 		data.push data_row
 		data_row.resource = subject
-		console.debug dim "#{i} / #{all_results.length}"
+		console.debug dim "#{i+1} / #{subjects.length}"
 		subject_results = await query "select * where { <#{subject}> ?predicate ?object }"
 		for identifier from subject_results
 			if relevant_predicates.includes identifier.predicate
