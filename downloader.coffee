@@ -39,7 +39,8 @@ do =>
 		select distinct ?subject ?redirectsTo where {
 			#{subject_query_conditions}
 			OPTIONAL { ?subject dbo:wikiPageRedirects ?redirectsTo }
-		}"""
+			LIMIT 1
+		}""" # fixme try out formatting at the end of file first
 	subjects = all_results
 		# todo do this in the query directly? I didnt manage to :(
 		.map (r) => r.redirectsTo or r.subject
@@ -60,21 +61,7 @@ do =>
 				else
 					data_row[identifier.predicate] = identifier.object
 
-	csv_escape = (v) =>
-		v = v.replace /"/g, '""'
-		"\"#{v}\""
-	columns = [ 'resource', ...relevant_predicates ]
-	csv = columns.map((col) => csv_escape(col)).join(',') + '\n' +
-		data
-			.map (row) =>
-				columns
-					.map (col) =>
-						v = row[col] or ''
-						csv_escape v
-					.join ','
-			.join '\n'
-
 	console.debug gray dim 'write out json...'
-	await writeFile "data/data-#{resource_name}.json", JSON.stringify data
-	console.debug gray dim 'write out to csv...'
-	await writeFile "data/data-#{resource_name}.csv", csv
+	await writeFile "data/data-#{resource_name}.json", JSON.stringify
+		predicates: [ 'resource', ...relevant_predicates ]
+		rows: data

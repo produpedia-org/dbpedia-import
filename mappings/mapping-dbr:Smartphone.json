@@ -1092,307 +1092,2113 @@
         }
     ],
     "relevant_predicates": [
-        "http://dbpedia.org/ontology/cpu",
-        "http://dbpedia.org/ontology/manufacturer",
-        "http://dbpedia.org/ontology/operatingSystem",
-        "http://dbpedia.org/ontology/weight",
-        "http://dbpedia.org/property/camera",
-        "http://dbpedia.org/property/connectivity",
-        "http://dbpedia.org/property/dimensions",
-        "http://dbpedia.org/property/display",
-        "http://dbpedia.org/property/input",
-        "http://dbpedia.org/property/releasedate",
-        "http://dbpedia.org/property/lifespan",
-        "http://dbpedia.org/property/media",
-        "http://dbpedia.org/property/power",
-        "http://dbpedia.org/property/carrier",
-        "http://dbpedia.org/property/hac",
-        "http://dbpedia.org/property/memory",
-        "http://dbpedia.org/ontology/predecessor",
-        "http://dbpedia.org/ontology/successor",
-        "http://dbpedia.org/property/cpu",
-        "http://dbpedia.org/property/touchpad",
-        "http://dbpedia.org/property/operatingsystem",
-        "http://dbpedia.org/property/graphics",
-        "http://dbpedia.org/property/music",
-        "http://dbpedia.org/property/service",
-        "http://dbpedia.org/property/sound",
-        "http://dbpedia.org/property/storage",
-        "http://dbpedia.org/property/video",
-        "http://dbpedia.org/property/volume",
-        "http://dbpedia.org/property/controllers",
-        "http://dbpedia.org/property/developer",
-        "http://dbpedia.org/property/family",
-        "http://dbpedia.org/property/generation",
-        "http://dbpedia.org/property/price",
-        "http://dbpedia.org/property/weight",
-        "http://dbpedia.org/property/battery",
-        "http://dbpedia.org/property/discontinued",
-        "http://dbpedia.org/property/location",
-        "http://dbpedia.org/property/date",
-        "http://dbpedia.org/property/unitssold",
-        "http://dbpedia.org/property/manufacturer",
-        "http://dbpedia.org/ontology/status",
-        "http://dbpedia.org/property/available",
-        "http://dbpedia.org/property/successor",
-        "http://dbpedia.org/property/networks",
-        "http://dbpedia.org/property/rearCamera",
-        "http://dbpedia.org/property/videoRecording",
-        "http://dbpedia.org/property/gpu",
-        "http://dbpedia.org/property/size",
-        "http://dbpedia.org/property/carriers",
-        "http://dbpedia.org/property/screen",
-        "http://dbpedia.org/property/codename",
-        "http://dbpedia.org/property/memoryCard",
-        "http://dbpedia.org/property/other",
-        "http://dbpedia.org/property/2ndCamera",
-        "http://dbpedia.org/property/ringtone",
-        "http://dbpedia.org/property/ringtones",
-        "http://dbpedia.org/property/predecessor",
-        "http://dbpedia.org/property/series",
-        "http://dbpedia.org/property/mediaFormats",
-        "http://dbpedia.org/property/frontCamera",
-        "http://dbpedia.org/property/modelnumber",
-        "http://dbpedia.org/property/sar",
-        "http://dbpedia.org/ontology/releaseDate",
-        "http://dbpedia.org/property/after",
-        "http://dbpedia.org/property/before",
-        "http://dbpedia.org/property/years",
-        "http://dbpedia.org/property/model",
-        "http://dbpedia.org/property/center",
-        "http://dbpedia.org/property/testMode",
-        "http://dbpedia.org/property/ram",
-        "http://dbpedia.org/property/rom",
-        "http://dbpedia.org/property/brand",
-        "http://dbpedia.org/property/align",
-        "http://dbpedia.org/property/direction",
-        "http://dbpedia.org/property/width",
-        "http://dbpedia.org/property/audio",
-        "http://dbpedia.org/property/extScreen",
-        "http://dbpedia.org/property/availability",
-        "http://dbpedia.org/property/announced",
-        "http://dbpedia.org/property/released",
-        "http://dbpedia.org/property/nfc",
-        "http://dbpedia.org/property/sensorType",
-        "http://dbpedia.org/property/seriesL",
-        "http://dbpedia.org/property/os",
-        "http://dbpedia.org/property/rootAccess",
-        "http://dbpedia.org/property/releaseDate",
-        "http://dbpedia.org/property/browser",
-        "http://dbpedia.org/property/protection",
-        "http://dbpedia.org/property/availableColours",
-        "http://dbpedia.org/property/release",
-        "http://dbpedia.org/property/chipset",
-        "http://dbpedia.org/property/importer",
-        "http://dbpedia.org/property/technology",
-        "http://dbpedia.org/property/unrestrictedBootloader",
-        "http://dbpedia.org/property/colors",
-        "http://dbpedia.org/property/glass",
-        "http://dbpedia.org/property/cost",
-        "http://dbpedia.org/property/sarValues",
-        "http://dbpedia.org/property/modelName",
-        "http://dbpedia.org/property/fingerprintReader",
-        "http://dbpedia.org/property/mediaFormat",
-        "http://dbpedia.org/property/simCard",
-        "http://dbpedia.org/property/color",
-        "http://dbpedia.org/property/material",
-        "http://dbpedia.org/property/unitsSold",
-        "http://dbpedia.org/property/extDisplay",
-        "http://dbpedia.org/property/audioTechnology",
-        "http://dbpedia.org/property/unitsshipped",
-        "http://dbpedia.org/property/sensors",
-        "http://dbpedia.org/property/features",
-        "http://dbpedia.org/property/compatibleNetworks",
-        "http://dbpedia.org/property/gps",
-        "http://dbpedia.org/property/availableStorage",
-        "http://dbpedia.org/property/skin",
-        "http://dbpedia.org/property/partnumber",
-        "http://dbpedia.org/property/collapsible",
-        "http://dbpedia.org/property/species",
-        "http://dbpedia.org/property/voy",
-        "http://dbpedia.org/property/retailAvailablity",
-        "http://dbpedia.org/property/lensOffset",
-        "http://dbpedia.org/property/operatingSystem",
-        "http://dbpedia.org/property/browsingAndInternet",
-        "http://dbpedia.org/property/locationTechnologies",
-        "http://dbpedia.org/property/otgSupport",
-        "http://dbpedia.org/property/designer",
-        "http://dbpedia.org/property/design",
-        "http://dbpedia.org/property/sim",
-        "http://dbpedia.org/property/mostRecentFirmware",
-        "http://dbpedia.org/property/3gNetworkSpeed",
-        "http://dbpedia.org/property/cameraFeatures",
-        "http://dbpedia.org/property/sensor",
-        "http://dbpedia.org/property/locationServices",
-        "http://dbpedia.org/property/processor",
-        "http://dbpedia.org/property/nowSoftwareVersion",
-        "http://dbpedia.org/property/latestFirmwareVersion",
-        "http://dbpedia.org/property/sarLevel",
-        "http://dbpedia.org/property/colours",
-        "http://dbpedia.org/property/videoFormats",
-        "http://dbpedia.org/property/exteriorScreen",
-        "http://dbpedia.org/property/internalMemory",
-        "http://dbpedia.org/property/resolution",
-        "http://dbpedia.org/property/sarValue",
-        "http://dbpedia.org/property/ram.",
-        "http://dbpedia.org/property/ringtone'''_",
-        "http://dbpedia.org/property/memorySlot",
-        "http://dbpedia.org/property/openglEsSupport",
-        "http://dbpedia.org/property/standbyTime",
-        "http://dbpedia.org/property/talkTime",
-        "http://dbpedia.org/property/videoCamera",
-        "http://dbpedia.org/property/carrierLljkkjjkkjkj",
-        "http://dbpedia.org/property/newestModelDiscontinuation",
-        "http://dbpedia.org/property/price.",
-        "http://dbpedia.org/property/cameraName",
-        "http://dbpedia.org/property/fNumbers",
-        "http://dbpedia.org/property/iproc",
-        "http://dbpedia.org/property/lens",
-        "http://dbpedia.org/property/maker",
-        "http://dbpedia.org/property/rearlcd",
-        "http://dbpedia.org/property/recordingMedium",
-        "http://dbpedia.org/property/res",
-        "http://dbpedia.org/property/sensorSize",
-        "http://dbpedia.org/property/speedrange",
-        "http://dbpedia.org/property/multimedia",
-        "http://dbpedia.org/property/dimension",
-        "http://dbpedia.org/property/output",
-        "http://dbpedia.org/property/modelNumber",
-        "http://dbpedia.org/property/builtInMemoryCard",
-        "http://dbpedia.org/ontology/developer",
-        "http://dbpedia.org/property/simCardType",
-        "http://dbpedia.org/property/navigation",
-        "http://dbpedia.org/property/buttons",
-        "http://dbpedia.org/property/float",
-        "http://dbpedia.org/property/bands",
-        "http://dbpedia.org/property/playableFormats",
-        "http://dbpedia.org/property/form",
-        "http://dbpedia.org/property/keyboard",
-        "http://dbpedia.org/property/id",
-        "http://dbpedia.org/property/body",
-        "http://dbpedia.org/property/head",
-        "http://dbpedia.org/ontology/foundingYear",
-        "http://dbpedia.org/property/keyPeople",
-        "http://dbpedia.org/property/camera/camcorder",
-        "http://dbpedia.org/property/dataTransmission",
-        "http://dbpedia.org/property/hacRating",
-        "http://dbpedia.org/property/phoneType",
-        "http://dbpedia.org/property/standby",
-        "http://dbpedia.org/property/usageTime",
-        "http://dbpedia.org/property/frequency",
-        "http://dbpedia.org/property/introduced",
-        "http://dbpedia.org/property/currentSwVersion",
-        "http://dbpedia.org/property/formFactor",
-        "http://dbpedia.org/property/webBrowsing",
-        "http://dbpedia.org/property/externalDisplay",
-        "http://dbpedia.org/property/data",
-        "http://dbpedia.org/property/sarRating",
-        "http://dbpedia.org/property/internet",
-        "http://dbpedia.org/property/expiry",
-        "http://dbpedia.org/property/peripherals",
-        "http://dbpedia.org/property/founders",
-        "http://dbpedia.org/property/packageManager",
-        "http://dbpedia.org/property/updatemodel",
-        "http://dbpedia.org/property/workingState",
-        "http://dbpedia.org/property/ports",
-        "http://dbpedia.org/property/manufacturerCode",
-        "http://dbpedia.org/property/onlineservice",
-        "http://dbpedia.org/property/status",
-        "http://dbpedia.org/property/cpuspeed",
-        "http://dbpedia.org/property/ramMemory",
-        "http://dbpedia.org/property/latestSoftwareVersion",
-        "http://dbpedia.org/property/msrp",
-        "http://dbpedia.org/property/colour",
-        "http://dbpedia.org/ontology/type",
-        "http://dbpedia.org/property/c",
-        "http://dbpedia.org/property/commons",
-        "http://dbpedia.org/property/d",
-        "http://dbpedia.org/property/form",
-        "http://dbpedia.org/property/serieslabel",
-        "http://dbpedia.org/property/shape",
-        "http://dbpedia.org/property/type",
-        "http://purl.org/dc/terms/subject",
-        "http://purl.org/linguistics/gold/hypernym",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "http://dbpedia.org/property/exScreen",
-        "http://dbpedia.org/ontology/parentCompany",
-        "http://dbpedia.org/property/areaServed",
-        "http://dbpedia.org/property/page",
-        "http://dbpedia.org/property/batteryTechnology",
-        "http://dbpedia.org/property/displayColour",
-        "http://dbpedia.org/property/primaryKeyboard",
-        "http://dbpedia.org/property/otherNames",
-        "http://dbpedia.org/property/networkDataConnectivity",
-        "http://dbpedia.org/ontology/latestReleaseVersion",
-        "http://dbpedia.org/property/language",
-        "http://dbpedia.org/property/certifications",
-        "http://dbpedia.org/property/interface",
-        "http://dbpedia.org/property/headphones",
-        "http://dbpedia.org/property/displaySize",
-        "http://dbpedia.org/property/displayType",
-        "http://dbpedia.org/property/additionalFeatures",
-        "http://dbpedia.org/property/phonebook",
-        "http://dbpedia.org/property/launched",
-        "http://dbpedia.org/property/radioTuner",
-        "http://dbpedia.org/property/wiFi",
-        "http://dbpedia.org/property/re;ease",
-        "http://dbpedia.org/property/messaging",
-        "http://dbpedia.org/ontology/soundRecording",
-        "http://dbpedia.org/ontology/latestReleaseDate",
-        "http://dbpedia.org/property/graphicsProcessor",
-        "http://dbpedia.org/property/insideCamera",
-        "http://dbpedia.org/property/imaging",
-        "http://dbpedia.org/property/currentStatus",
-        "http://dbpedia.org/property/variant",
-        "http://dbpedia.org/property/company",
-        "http://dbpedia.org/property/launchYear",
-        "http://dbpedia.org/property/additionalFeature",
-        "http://dbpedia.org/property/musicPlayer",
-        "http://dbpedia.org/property/phoneBookMemory",
-        "http://dbpedia.org/property/videoPlayer",
-        "http://dbpedia.org/property/phoneStyle",
-        "http://dbpedia.org/property/communication",
-        "http://dbpedia.org/property/voiceCommand",
-        "http://dbpedia.org/property/cellularNetwork",
-        "http://dbpedia.org/property/firstRelease",
-        "http://dbpedia.org/property/att",
-        "http://dbpedia.org/property/expandableMemory",
-        "http://dbpedia.org/property/fmRadio",
-        "http://dbpedia.org/property/music&Video",
-        "http://dbpedia.org/property/radiationSar",
-        "http://dbpedia.org/property/yearsActive",
-        "http://dbpedia.org/property/mainScreen",
-        "http://dbpedia.org/property/multitasking",
-        "http://dbpedia.org/property/accessdate",
-        "http://dbpedia.org/property/year",
-        "http://dbpedia.org/property/screenshotSize",
-        "http://dbpedia.org/property/imsize",
-        "http://dbpedia.org/property/yearOfCreation",
-        "http://dbpedia.org/property/releaseVersion",
-        "http://dbpedia.org/property/supportStatus",
-        "http://dbpedia.org/property/precededBy",
-        "http://dbpedia.org/property/previewVersion",
-        "http://dbpedia.org/ontology/latestPreviewVersion",
-        "http://dbpedia.org/property/height",
-        "http://dbpedia.org/property/totalWidth",
-        "http://dbpedia.org/property/latestReleaseDate",
-        "http://dbpedia.org/property/succeededBy",
-        "http://dbpedia.org/property/versionOf",
-        "http://dbpedia.org/property/gaDate",
-        "http://dbpedia.org/ontology/formationYear",
-        "http://dbpedia.org/property/previewDate",
-        "http://dbpedia.org/property/latestTestVersion",
-        "http://dbpedia.org/property/dissolved",
-        "http://dbpedia.org/property/services",
-        "http://dbpedia.org/property/3g",
-        "http://dbpedia.org/ontology/designer",
-        "http://dbpedia.org/property/compatibleNetwork",
-        "http://dbpedia.org/property/bluetooth",
-        "http://dbpedia.org/property/usb",
-        "http://dbpedia.org/property/gsmchoiceId",
-        "http://dbpedia.org/property/network",
-        "http://dbpedia.org/property/networkType",
-        "http://dbpedia.org/property/firstReleaseDate"
+        {
+            "predicate": "http://dbpedia.org/ontology/cpu",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/manufacturer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/operatingSystem",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/weight",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/camera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/connectivity",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/dimensions",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/display",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/input",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/releasedate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/lifespan",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/media",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/power",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/carrier",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/hac",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/memory",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/predecessor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/successor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cpu",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/touchpad",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/operatingsystem",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/graphics",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/music",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/service",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sound",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/storage",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/video",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/volume",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/controllers",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/developer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/family",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/generation",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/price",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/weight",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/battery",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/discontinued",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/location",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/date",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/unitssold",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/manufacturer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/status",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/available",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/successor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/networks",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/rearCamera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/videoRecording",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/gpu",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/size",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/carriers",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/screen",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/codename",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/memoryCard",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/other",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/2ndCamera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ringtone",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ringtones",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/predecessor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/series",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/mediaFormats",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/frontCamera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/modelnumber",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sar",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/releaseDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/after",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/before",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/years",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/model",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/center",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/testMode",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ram",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/rom",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/brand",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/align",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/direction",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/width",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/audio",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/extScreen",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/availability",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/announced",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/released",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/nfc",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sensorType",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/seriesL",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/os",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/rootAccess",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/releaseDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/browser",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/protection",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/availableColours",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/release",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/chipset",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/importer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/technology",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/unrestrictedBootloader",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/colors",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/glass",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cost",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sarValues",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/modelName",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/fingerprintReader",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/mediaFormat",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/simCard",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/color",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/material",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/unitsSold",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/extDisplay",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/audioTechnology",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/unitsshipped",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sensors",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/features",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/compatibleNetworks",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/gps",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/availableStorage",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/skin",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/partnumber",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/collapsible",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/species",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/voy",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/retailAvailablity",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/lensOffset",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/operatingSystem",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/browsingAndInternet",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/locationTechnologies",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/otgSupport",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/designer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/design",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sim",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/mostRecentFirmware",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/3gNetworkSpeed",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cameraFeatures",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sensor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/locationServices",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/processor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/nowSoftwareVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/latestFirmwareVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sarLevel",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/colours",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/videoFormats",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/exteriorScreen",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/internalMemory",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/resolution",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sarValue",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ram.",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ringtone'''_",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/memorySlot",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/openglEsSupport",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/standbyTime",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/talkTime",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/videoCamera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/carrierLljkkjjkkjkj",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/newestModelDiscontinuation",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/price.",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cameraName",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/fNumbers",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/iproc",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/lens",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/maker",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/rearlcd",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/recordingMedium",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/res",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sensorSize",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/speedrange",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/multimedia",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/dimension",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/output",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/modelNumber",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/builtInMemoryCard",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/developer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/simCardType",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/navigation",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/buttons",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/float",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/bands",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/playableFormats",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/form",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/keyboard",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/id",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/body",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/head",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/foundingYear",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/keyPeople",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/camera/camcorder",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/dataTransmission",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/hacRating",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/phoneType",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/standby",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/usageTime",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/frequency",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/introduced",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/currentSwVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/formFactor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/webBrowsing",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/externalDisplay",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/data",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/sarRating",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/internet",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/expiry",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/peripherals",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/founders",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/packageManager",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/updatemodel",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/workingState",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ports",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/manufacturerCode",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/onlineservice",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/status",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cpuspeed",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/ramMemory",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/latestSoftwareVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/msrp",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/colour",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/type",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/c",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/commons",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/d",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/form",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/serieslabel",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/shape",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/type",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://purl.org/dc/terms/subject",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://purl.org/linguistics/gold/hypernym",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/exScreen",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/parentCompany",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/areaServed",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/page",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/batteryTechnology",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/displayColour",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/primaryKeyboard",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/otherNames",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/networkDataConnectivity",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/latestReleaseVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/language",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/certifications",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/interface",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/headphones",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/displaySize",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/displayType",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/additionalFeatures",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/phonebook",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/launched",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/radioTuner",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/wiFi",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/re;ease",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/messaging",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/soundRecording",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/latestReleaseDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/graphicsProcessor",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/insideCamera",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/imaging",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/currentStatus",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/variant",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/company",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/launchYear",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/additionalFeature",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/musicPlayer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/phoneBookMemory",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/videoPlayer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/phoneStyle",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/communication",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/voiceCommand",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/cellularNetwork",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/firstRelease",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/att",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/expandableMemory",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/fmRadio",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/music&Video",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/radiationSar",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/yearsActive",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/mainScreen",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/multitasking",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/accessdate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/year",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/screenshotSize",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/imsize",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/yearOfCreation",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/releaseVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/supportStatus",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/precededBy",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/previewVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/latestPreviewVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/height",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/totalWidth",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/latestReleaseDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/succeededBy",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/versionOf",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/gaDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/formationYear",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/previewDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/latestTestVersion",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/dissolved",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/services",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/3g",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/ontology/designer",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/compatibleNetwork",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/bluetooth",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/usb",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/gsmchoiceId",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/network",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/networkType",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        },
+        {
+            "predicate": "http://dbpedia.org/property/firstReleaseDate",
+            "mapTo": null,
+            "export": false,
+            "unit": "??",
+            "structured": false
+        }
     ],
     "irrelevant_predicates": [
         "http://www.w3.org/2000/01/rdf-schema#seeAlso",

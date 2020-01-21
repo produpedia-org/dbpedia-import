@@ -19,7 +19,7 @@ TODOs
 	  or other way round, subtraction so all in best possible quality but no dups?
 	  or maybe work with mappings only
 - when querying: label etc @lang?
-- find and add predicates that always apply to relevant_predicates
+	- find and add predicates that always apply to relevant_predicates
 - dbp:imagesize??
 - range vs array vs single value
 - add all defining_identifiers to relevant_predicates, e.g. <form>
@@ -38,6 +38,9 @@ strategy:
 - commit/merge data onto dbpedia branch
 - merge dbpedia into master
 ###
+
+class RelevantPredicate
+	constructor: (@predicate, @mapTo = null, @export = false, @unit = "", @structured = false) ->
 
 open_subjects = new Set
 open_objects = new Set
@@ -64,7 +67,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 			green "#{subjects[0..5]}, #{subjects.length} in total"
 	console.log italic "This statement is: [d]efining, [nothing] predicate is irrelevant, predicate is [r]elevant, [i] predicate is irrelevant but investigate, [ii] only statement irrelevant but investigate, [s] only statement is irrelevant. ? "
 	defining = defining_identifiers.find (i) => i.predicate == predicate and i.object == object
-	relevant = relevant_predicates.includes predicate
+	relevant = relevant_predicates.map('predicate').includes predicate
 	irrelevant_identifier = irrelevant_identifiers.find (i) => i.predicate == predicate and i.object == object
 	irrelevant = irrelevant_predicates.includes predicate
 	if defining or relevant or irrelevant_identifier or irrelevant
@@ -75,7 +78,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 			# defining_identifiers["#{predicate} #{object}"]
 			# defining_identifiers[predicate] = object
 			defining_identifiers.push { predicate, object }
-			relevant_predicates.push predicate
+			relevant_predicates.push new RelevantPredicate predicate
 			checked_identifiers.push "#{predicate} #{object}"
 			# open_identifiers[predicate] = object # is already in open_subjects
 			if not subjects
@@ -89,7 +92,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 				if not checked_subjects.includes subject
 					open_subjects.add subject
 		when 'r'
-			relevant_predicates.push predicate
+			relevant_predicates.push new RelevantPredicate predicate
 			checked_predicates.push predicate
 		when 'i'
 			irrelevant_predicates.push predicate
@@ -154,7 +157,7 @@ investigate_subject = (subject) =>
 			console.log gray "Sample objects: " +
 				green "#{results[0..5].map 'object'}, #{results.length} in total"
 			console.log italic "This predicate is: [r]elevant, [t]raverse investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
-			if relevant_predicates.includes predicate
+			if relevant_predicates.map('predicate').includes predicate
 				console.log dim "Already saved as relevant predicate"
 			choice = await readLine '> '
 			switch choice
@@ -162,7 +165,7 @@ investigate_subject = (subject) =>
 					for result from results
 						await ask_for_identifier null, predicate, result.object
 				when 'r'
-					relevant_predicates.push predicate
+					relevant_predicates.push new RelevantPredicate predicate
 					checked_predicates.push predicate
 				else
 					irrelevant_predicates.push predicate
@@ -193,7 +196,7 @@ write_out = =>
 	console.debug gray dim 'write out to file...'
 	end_result = {
 		irrelevant_identifiers, defining_identifiers, relevant_predicates, irrelevant_predicates
-		# dev
+		# not actually needed, only here while for testing purposes while developing this script
 		checked: { checked_identifiers, checked_objects, checked_predicates, checked_subjects }
 		open:
 			open_identifiers: open_identifiers
@@ -255,7 +258,7 @@ do =>
 		console.debug dim "Found #{open_subjects.size} subjects matching existing defining_identifiers that will now be queried"
 		checked_subjects = [] 
 		#
-		checked_predicates = [ ...relevant_predicates, ...irrelevant_predicates ]
+		checked_predicates = [ ...relevant_predicates.map('predicate'), ...irrelevant_predicates ]
 		# checked_objects =
 		checked_identifiers = [ ...defining_identifiers, ...irrelevant_identifiers ]
 			.map (identifier) => "#{identifier.predicate} #{identifier.object}"
