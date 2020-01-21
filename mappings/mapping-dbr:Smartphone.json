@@ -1,3199 +1,3199 @@
 {
     "irrelevant_identifiers": [
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://www.w3.org/2002/07/owl#Thing"
+            "predicate": "rdf:type",
+            "object": "owl:Thing"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://www.wikidata.org/entity/Q1067263"
+            "predicate": "rdf:type",
+            "object": "wikidata:Q1067263"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/ontology/Device"
+            "predicate": "rdf:type",
+            "object": "dbo:Device"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/ontology/InformationAppliance"
+            "predicate": "rdf:type",
+            "object": "dbo:InformationAppliance"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/ontology/TelevisionShow"
+            "predicate": "rdf:type",
+            "object": "dbo:TelevisionShow"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatTabletComputers"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatTabletComputers"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Android102710201"
+            "predicate": "rdf:type",
+            "object": "yago:Android102710201"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Appliance102729965"
+            "predicate": "rdf:type",
+            "object": "yago:Appliance102729965"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Artifact100021939"
+            "predicate": "rdf:type",
+            "object": "yago:Artifact100021939"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Automaton102761392"
+            "predicate": "rdf:type",
+            "object": "yago:Automaton102761392"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Computer103082979"
+            "predicate": "rdf:type",
+            "object": "yago:Computer103082979"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Device103183080"
+            "predicate": "rdf:type",
+            "object": "yago:Device103183080"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/ElectronicEquipment103278248"
+            "predicate": "rdf:type",
+            "object": "yago:ElectronicEquipment103278248"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Equipment103294048"
+            "predicate": "rdf:type",
+            "object": "yago:Equipment103294048"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Instrumentality103575240"
+            "predicate": "rdf:type",
+            "object": "yago:Instrumentality103575240"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Machine103699975"
+            "predicate": "rdf:type",
+            "object": "yago:Machine103699975"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Mechanism103738472"
+            "predicate": "rdf:type",
+            "object": "yago:Mechanism103738472"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Object100002684"
+            "predicate": "rdf:type",
+            "object": "yago:Object100002684"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/PhysicalEntity100001930"
+            "predicate": "rdf:type",
+            "object": "yago:PhysicalEntity100001930"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Whole100003553"
+            "predicate": "rdf:type",
+            "object": "yago:Whole100003553"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Products_introduced_in_2009"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Products_introduced_in_2009"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Samsung_Galaxy"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Samsung_Galaxy"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Computer-related_introductions_in_2009"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Computer-related_introductions_in_2009"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Tablet_computer"
+            "predicate": "dbo:type",
+            "object": "dbr:Tablet_computer"
         },
         {
-            "predicate": "http://dbpedia.org/property/group",
+            "predicate": "dbp:group",
             "object": "Note"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Series"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Series"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatInternetTablets"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatInternetTablets"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Block102852523"
+            "predicate": "rdf:type",
+            "object": "yago:Block102852523"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Commodity103076708"
+            "predicate": "rdf:type",
+            "object": "yago:Commodity103076708"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Merchandise103748886"
+            "predicate": "rdf:type",
+            "object": "yago:Merchandise103748886"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Slab104233405"
+            "predicate": "rdf:type",
+            "object": "yago:Slab104233405"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Tablet104381302"
+            "predicate": "rdf:type",
+            "object": "yago:Tablet104381302"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2010"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2010"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Tablet_computers_introduced_in_2010"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Tablet_computers_introduced_in_2010"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Samsung_Galaxy_Tab_series"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Samsung_Galaxy_Tab_series"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Tablet_computers"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Tablet_computers"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Computer"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Computer"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatAsusProducts"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatAsusProducts"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatPortableMediaPlayers"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatPortableMediaPlayers"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2013"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2013"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Portable_media_players"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Portable_media_players"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Products_introduced_in_2013"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Products_introduced_in_2013"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Asus_products"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Asus_products"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Phablets"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Phablets"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatDellProducts"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatDellProducts"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Dell_products"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Dell_products"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Tablet"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Tablet"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2011"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2011"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Samsung_Galaxy_Note_series"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Samsung_Galaxy_Note_series"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatGPSNavigationDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatGPSNavigationDevices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:GPS_navigation_devices"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:GPS_navigation_devices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Verizon_Wireless"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Verizon_Wireless"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Videotelephony"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Videotelephony"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/ontology/Company"
+            "predicate": "rdf:type",
+            "object": "dbo:Company"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Telephone"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Telephone"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2008"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2008"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Headset"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Headset"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatDigitalAudioPlayers"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatDigitalAudioPlayers"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Digital_audio_players"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Digital_audio_players"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/ElectronicDevice103277771"
+            "predicate": "rdf:type",
+            "object": "yago:ElectronicDevice103277771"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/PersonalDigitalAssistant103918737"
+            "predicate": "rdf:type",
+            "object": "yago:PersonalDigitalAssistant103918737"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatPersonalDigitalAssistants"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatPersonalDigitalAssistants"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2007"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2007"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Personal_digital_assistants"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Personal_digital_assistants"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Helio_(wireless_carrier)"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Helio_(wireless_carrier)"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Slider"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Slider"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatTouchscreenPortableMediaPlayers"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatTouchscreenPortableMediaPlayers"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Deutsche_Telekom"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Deutsche_Telekom"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Touchscreen_portable_media_players"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Touchscreen_portable_media_players"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/ontology/Software"
+            "predicate": "rdf:type",
+            "object": "dbo:Software"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Product"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Product"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Science_and_technology_in_North_Korea"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Science_and_technology_in_North_Korea"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Economy_of_North_Korea"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Economy_of_North_Korea"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:2010_introductions"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:2010_introductions"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Sprint_Corporation"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Sprint_Corporation"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Haptic_technology"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Haptic_technology"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:BlackBerry"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:BlackBerry"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatAcerProducts"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatAcerProducts"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:2012_introductions"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:2012_introductions"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Canadian_brands"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Canadian_brands"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatInformationAppliances"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatInformationAppliances"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Information_appliances"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Information_appliances"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:2011_introductions"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:2011_introductions"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2014"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2014"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatLinux-basedDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatLinux-basedDevices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Linux-based_devices"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Linux-based_devices"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Phablet"
+            "predicate": "dbp:type",
+            "object": "dbr:Phablet"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2012"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2012"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Meizu"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Meizu"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:2009_introductions"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:2009_introductions"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Devices_capable_of_speech_recognition"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Devices_capable_of_speech_recognition"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Handwriting_recognition"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Handwriting_recognition"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Microsoft_hardware"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Microsoft_hardware"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatN-Gage(service)CompatibleDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatN-Gage(service)CompatibleDevices"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatProductsIntroducedIn2009"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatProductsIntroducedIn2009"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:CyanogenMod"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:CyanogenMod"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/QWERTY"
+            "predicate": "dbp:type",
+            "object": "dbr:QWERTY"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Samsung_Galaxy_Note_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Samsung_Galaxy_Note_mobile_phones"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Mobile_Internet_device"
+            "predicate": "dbo:type",
+            "object": "dbr:Mobile_Internet_device"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Handheld_computer"
+            "predicate": "dbo:type",
+            "object": "dbr:Handheld_computer"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Slate"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Pocket_PC"
+            "predicate": "dbo:type",
+            "object": "dbr:Pocket_PC"
         },
         {
-            "predicate": "http://dbpedia.org/property/class",
+            "predicate": "dbp:class",
             "object": "noprint Template-Fact"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Touchscreen"
+            "predicate": "dbp:type",
+            "object": "dbr:Touchscreen"
         },
         {
-            "predicate": "http://dbpedia.org/property/group",
+            "predicate": "dbp:group",
             "object": "\"note\""
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Android_(operating_system)"
+            "predicate": "dbp:type",
+            "object": "dbr:Android_(operating_system)"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "QWERTY Slide/Flip/Spin Phone"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Private_company_limited_by_shares"
+            "predicate": "dbo:type",
+            "object": "dbr:Private_company_limited_by_shares"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Capacitive_display"
+            "predicate": "dbp:type",
+            "object": "dbr:Capacitive_display"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Personal_digital_assistant"
+            "predicate": "dbp:type",
+            "object": "dbr:Personal_digital_assistant"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Pocket_PC"
+            "predicate": "dbp:type",
+            "object": "dbr:Pocket_PC"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Rugged_computer"
+            "predicate": "dbo:type",
+            "object": "dbr:Rugged_computer"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Elderly"
+            "predicate": "dbo:type",
+            "object": "dbr:Elderly"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Watch_phone"
+            "predicate": "dbp:type",
+            "object": "dbr:Watch_phone"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/G"
+            "predicate": "gold:hypernym",
+            "object": "dbr:G"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Multimedia"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Multimedia"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/D-"
+            "predicate": "gold:hypernym",
+            "object": "dbr:D-"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Slate"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Slate"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Device"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Device"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/MP"
+            "predicate": "gold:hypernym",
+            "object": "dbr:MP"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Verizon"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Verizon"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Sprint"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Sprint"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Replacement"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Replacement"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Model"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Model"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Version"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Version"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Second"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Second"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Update"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Update"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Touchscreen"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Touchscreen"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Line"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Line"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Successor"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Successor"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Screen"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Screen"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Part"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Part"
         },
         {
-            "predicate": "http://dbpedia.org/property/comparableTo",
+            "predicate": "dbp:comparableTo",
             "object": "Samsung Gravity 2"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Digital"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Digital"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Internet"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Internet"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Text"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Text"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Platform"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Platform"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Personal_computer"
+            "predicate": "dbo:type",
+            "object": "dbr:Personal_computer"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Portable_media_player"
+            "predicate": "dbo:type",
+            "object": "dbr:Portable_media_player"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/SIM"
+            "predicate": "gold:hypernym",
+            "object": "dbr:SIM"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Generation"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Generation"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Touchscreen"
+            "predicate": "dbo:type",
+            "object": "dbr:Touchscreen"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/E-book_reader"
+            "predicate": "dbo:type",
+            "object": "dbr:E-book_reader"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Brand"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Brand"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/E-reader"
+            "predicate": "dbo:type",
+            "object": "dbr:E-reader"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "32400.0"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Player"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Player"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/license",
-            "object": "http://dbpedia.org/resource/Proprietary_software"
+            "predicate": "dbo:license",
+            "object": "dbr:Proprietary_software"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Application"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Application"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Smartwatch"
+            "predicate": "dbp:type",
+            "object": "dbr:Smartwatch"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Set-top_box"
+            "predicate": "dbo:type",
+            "object": "dbr:Set-top_box"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Microconsole"
+            "predicate": "dbo:type",
+            "object": "dbr:Microconsole"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Handheld_game_console"
+            "predicate": "dbo:type",
+            "object": "dbr:Handheld_game_console"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Game"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Game"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Gaming_tablet"
+            "predicate": "dbo:type",
+            "object": "dbr:Gaming_tablet"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/History_of_video_game_consoles_(eighth_generation)"
+            "predicate": "dbp:type",
+            "object": "dbr:History_of_video_game_consoles_(eighth_generation)"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Wearable_computer"
+            "predicate": "dbo:type",
+            "object": "dbr:Wearable_computer"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Optical_head-mounted_display"
+            "predicate": "dbo:type",
+            "object": "dbr:Optical_head-mounted_display"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Augmented_reality"
+            "predicate": "dbo:type",
+            "object": "dbr:Augmented_reality"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Wearable_technology"
+            "predicate": "dbo:type",
+            "object": "dbr:Wearable_technology"
         },
         {
-            "predicate": "http://dbpedia.org/property/commons",
+            "predicate": "dbp:commons",
             "object": "Category:Google Glass"
         },
         {
-            "predicate": "http://dbpedia.org/property/logoCaption",
+            "predicate": "dbp:logoCaption",
             "object": "Google Glass logo"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Night Vision Device for smartphone"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Restaurant Tablet"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Tablet_computer"
+            "predicate": "dbp:type",
+            "object": "dbr:Tablet_computer"
         },
         {
-            "predicate": "http://dbpedia.org/property/samsungGalaxySeries",
+            "predicate": "dbp:samsungGalaxySeries",
             "object": "Upper mid-range devices"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Personal_computer"
+            "predicate": "dbp:type",
+            "object": "dbr:Personal_computer"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Portable_media_player"
+            "predicate": "dbp:type",
+            "object": "dbr:Portable_media_player"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Add-on programmable button"
         }
     ],
     "defining_identifiers": [
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Phablet"
+            "predicate": "dbo:type",
+            "object": "dbr:Phablet"
         },
         {
-            "predicate": "http://dbpedia.org/property/form",
-            "object": "http://dbpedia.org/resource/Slide_(form)"
+            "predicate": "dbp:form",
+            "object": "dbr:Slide_(form)"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Mobile_phone"
+            "predicate": "dbp:type",
+            "object": "dbr:Mobile_phone"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Smartphone"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Smartphone"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatLGElectronicsMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatLGElectronicsMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2009"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2009"
         },
         {
-            "predicate": "http://dbpedia.org/property/serieslabel",
-            "object": "http://dbpedia.org/resource/History_of_iPhone"
+            "predicate": "dbp:serieslabel",
+            "object": "dbr:History_of_iPhone"
         },
         {
-            "predicate": "http://dbpedia.org/property/shape",
-            "object": "http://dbpedia.org/resource/Mobile_phone_shape"
+            "predicate": "dbp:shape",
+            "object": "dbr:Mobile_phone_shape"
         },
         {
-            "predicate": "http://dbpedia.org/property/commons",
+            "predicate": "dbp:commons",
             "object": "Category:Samsung Galaxy S II I9100, Samsung Galaxy S II I9100G or Samsung Galaxy S II I9100P"
         },
         {
-            "predicate": "http://dbpedia.org/property/c",
+            "predicate": "dbp:c",
             "object": "Category:iPhone 4"
         },
         {
-            "predicate": "http://dbpedia.org/property/d",
+            "predicate": "dbp:d",
             "object": "Q300890"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Android_(operating_system)_devices"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Android_(operating_system)_devices"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatSamsungMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatSamsungMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatTouchscreenMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatTouchscreenMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/CellularTelephone102992529"
+            "predicate": "rdf:type",
+            "object": "yago:CellularTelephone102992529"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Radiotelephone104044498"
+            "predicate": "rdf:type",
+            "object": "yago:Radiotelephone104044498"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/Telephone104401088"
+            "predicate": "rdf:type",
+            "object": "yago:Telephone104401088"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatAndroids"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatAndroids"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatMulti-touchMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatMulti-touchMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Smartphones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Smartphones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Multi-touch_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Multi-touch_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Touchscreen_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Touchscreen_mobile_phones"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Smartphone"
+            "predicate": "dbo:type",
+            "object": "dbr:Smartphone"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatAsusMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatAsusMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Asus_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Asus_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2013"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2013"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatDellMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatDellMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2010"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2010"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Dell_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Dell_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Samsung_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Samsung_mobile_phones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatNokiaMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatNokiaMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Nokia_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Nokia_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Phone"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Phone"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2008"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2008"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Handset"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Handset"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2007"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2007"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2006"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2006"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatCapacitiveTouchscreenMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatCapacitiveTouchscreenMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatMotorolaMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatMotorolaMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatQWERTYMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatQWERTYMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Motorola_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Motorola_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:QWERTY_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:QWERTY_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Capacitive_touchscreen_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Capacitive_touchscreen_mobile_phones"
         },
         {
-            "predicate": "http://dbpedia.org/property/form",
-            "object": "http://dbpedia.org/resource/Smartphone"
+            "predicate": "dbp:form",
+            "object": "dbr:Smartphone"
         },
         {
-            "predicate": "http://dbpedia.org/property/form",
-            "object": "http://dbpedia.org/resource/Bar_(form)"
+            "predicate": "dbp:form",
+            "object": "dbr:Bar_(form)"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2000"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2000"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatHTCMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatHTCMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatWindowsMobileDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatWindowsMobileDevices"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatWindowsMobileProfessionalDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatWindowsMobileProfessionalDevices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:HTC_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:HTC_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Windows_Mobile_Professional_devices"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Windows_Mobile_Professional_devices"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatMobilePhonesIntroducedIn2011"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatMobilePhonesIntroducedIn2011"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2011"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2011"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Smartphone"
+            "predicate": "dbp:type",
+            "object": "dbr:Smartphone"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Windows_Mobile"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Windows_Mobile"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatBlackBerry(company)MobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatBlackBerry(company)MobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:BlackBerry_Limited_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:BlackBerry_Limited_mobile_phones"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Bar_(form)"
+            "predicate": "dbo:type",
+            "object": "dbr:Bar_(form)"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatSonyEricssonMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatSonyEricssonMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Sony_Mobile_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Sony_Mobile_mobile_phones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatWindowsPhoneDevices"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatWindowsPhoneDevices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Windows_Phone_devices"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Windows_Phone_devices"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Acer_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Acer_mobile_phones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatAcerMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatAcerMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2014"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2014"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Bar_(form)"
+            "predicate": "dbp:type",
+            "object": "dbr:Bar_(form)"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatOpen-sourceMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatOpen-sourceMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Open-source_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Open-source_mobile_phones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatMobilePhonesIntroducedIn2014"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatMobilePhonesIntroducedIn2014"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Smartphone"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatSanyoMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatSanyoMobilePhones"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatKyoceraMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatKyoceraMobilePhones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Kyocera_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Kyocera_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Sanyo_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Sanyo_mobile_phones"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Mobile_phone_form_factors"
+            "predicate": "dbp:type",
+            "object": "dbr:Mobile_phone_form_factors"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:LG_Electronics_mobile_phones"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:LG_Electronics_mobile_phones"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Mobile_phones_introduced_in_2012"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Mobile_phones_introduced_in_2012"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Touchscreen_mobile_device"
+            "predicate": "dbp:type",
+            "object": "dbr:Touchscreen_mobile_device"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Slate_phone"
+            "predicate": "dbp:type",
+            "object": "dbr:Slate_phone"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:Micromax_Mobile"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:Micromax_Mobile"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Mobile_phone_form_factors"
+            "predicate": "dbo:type",
+            "object": "dbr:Mobile_phone_form_factors"
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
-            "object": "http://dbpedia.org/resource/Category:S60_(software_platform)"
+            "predicate": "dct:subject",
+            "object": "dbr:Category:S60_(software_platform)"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatNokiaPhonesBySeries"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatNokiaPhonesBySeries"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Touchscreen Smartphone"
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-            "object": "http://dbpedia.org/class/yago/WikicatOppoMobilePhones"
+            "predicate": "rdf:type",
+            "object": "yago:WikicatOppoMobilePhones"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Touchscreen smartphone"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
-            "object": "http://dbpedia.org/resource/Form_factor_(mobile_phones)"
+            "predicate": "dbp:type",
+            "object": "dbr:Form_factor_(mobile_phones)"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Compact touchscreen smartphone"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Mobile_Phone"
+            "predicate": "dbo:type",
+            "object": "dbr:Mobile_Phone"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Cellphone"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Cellphone"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "smartphone"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Phablet"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Phablet"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Feature phone"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Smartphones"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Smartphones"
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
-            "object": "http://dbpedia.org/resource/Phones"
+            "predicate": "gold:hypernym",
+            "object": "dbr:Phones"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Feature_phone"
+            "predicate": "dbo:type",
+            "object": "dbr:Feature_phone"
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
-            "object": "http://dbpedia.org/resource/Mobile_phone"
+            "predicate": "dbo:type",
+            "object": "dbr:Mobile_phone"
         },
         {
-            "predicate": "http://dbpedia.org/property/c",
+            "predicate": "dbp:c",
             "object": "Category:iPhone 7"
         },
         {
-            "predicate": "http://dbpedia.org/property/d",
+            "predicate": "dbp:d",
             "object": "Q26831164"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "iPhone 7 Plus: Phablet"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "iPhone 7: Smartphone"
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "object": "Phablet"
         }
     ],
     "relevant_predicates": [
         {
-            "predicate": "http://dbpedia.org/ontology/cpu",
+            "predicate": "dbo:cpu",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/manufacturer",
+            "predicate": "dbo:manufacturer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/operatingSystem",
+            "predicate": "dbo:operatingSystem",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/weight",
+            "predicate": "dbo:weight",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/camera",
+            "predicate": "dbp:camera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/connectivity",
+            "predicate": "dbp:connectivity",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/dimensions",
+            "predicate": "dbp:dimensions",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/display",
+            "predicate": "dbp:display",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/input",
+            "predicate": "dbp:input",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/releasedate",
+            "predicate": "dbp:releasedate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/lifespan",
+            "predicate": "dbp:lifespan",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/media",
+            "predicate": "dbp:media",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/power",
+            "predicate": "dbp:power",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/carrier",
+            "predicate": "dbp:carrier",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/hac",
+            "predicate": "dbp:hac",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/memory",
+            "predicate": "dbp:memory",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/predecessor",
+            "predicate": "dbo:predecessor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/successor",
+            "predicate": "dbo:successor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cpu",
+            "predicate": "dbp:cpu",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/touchpad",
+            "predicate": "dbp:touchpad",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/operatingsystem",
+            "predicate": "dbp:operatingsystem",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/graphics",
+            "predicate": "dbp:graphics",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/music",
+            "predicate": "dbp:music",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/service",
+            "predicate": "dbp:service",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sound",
+            "predicate": "dbp:sound",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/storage",
+            "predicate": "dbp:storage",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/video",
+            "predicate": "dbp:video",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/volume",
+            "predicate": "dbp:volume",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/controllers",
+            "predicate": "dbp:controllers",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/developer",
+            "predicate": "dbp:developer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/family",
+            "predicate": "dbp:family",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/generation",
+            "predicate": "dbp:generation",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/price",
+            "predicate": "dbp:price",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/weight",
+            "predicate": "dbp:weight",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/battery",
+            "predicate": "dbp:battery",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/discontinued",
+            "predicate": "dbp:discontinued",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/location",
+            "predicate": "dbp:location",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/date",
+            "predicate": "dbp:date",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/unitssold",
+            "predicate": "dbp:unitssold",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/manufacturer",
+            "predicate": "dbp:manufacturer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/status",
+            "predicate": "dbo:status",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/available",
+            "predicate": "dbp:available",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/successor",
+            "predicate": "dbp:successor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/networks",
+            "predicate": "dbp:networks",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/rearCamera",
+            "predicate": "dbp:rearCamera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/videoRecording",
+            "predicate": "dbp:videoRecording",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/gpu",
+            "predicate": "dbp:gpu",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/size",
+            "predicate": "dbp:size",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/carriers",
+            "predicate": "dbp:carriers",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/screen",
+            "predicate": "dbp:screen",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/codename",
+            "predicate": "dbp:codename",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/memoryCard",
+            "predicate": "dbp:memoryCard",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/other",
+            "predicate": "dbp:other",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/2ndCamera",
+            "predicate": "dbp:2ndCamera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ringtone",
+            "predicate": "dbp:ringtone",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ringtones",
+            "predicate": "dbp:ringtones",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/predecessor",
+            "predicate": "dbp:predecessor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/series",
+            "predicate": "dbp:series",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/mediaFormats",
+            "predicate": "dbp:mediaFormats",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/frontCamera",
+            "predicate": "dbp:frontCamera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/modelnumber",
+            "predicate": "dbp:modelnumber",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sar",
+            "predicate": "dbp:sar",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/releaseDate",
+            "predicate": "dbo:releaseDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/after",
+            "predicate": "dbp:after",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/before",
+            "predicate": "dbp:before",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/years",
+            "predicate": "dbp:years",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/model",
+            "predicate": "dbp:model",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/center",
+            "predicate": "dbp:center",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/testMode",
+            "predicate": "dbp:testMode",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ram",
+            "predicate": "dbp:ram",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/rom",
+            "predicate": "dbp:rom",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/brand",
+            "predicate": "dbp:brand",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/align",
+            "predicate": "dbp:align",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/direction",
+            "predicate": "dbp:direction",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/width",
+            "predicate": "dbp:width",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/audio",
+            "predicate": "dbp:audio",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/extScreen",
+            "predicate": "dbp:extScreen",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/availability",
+            "predicate": "dbp:availability",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/announced",
+            "predicate": "dbp:announced",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/released",
+            "predicate": "dbp:released",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/nfc",
+            "predicate": "dbp:nfc",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sensorType",
+            "predicate": "dbp:sensorType",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/seriesL",
+            "predicate": "dbp:seriesL",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/os",
+            "predicate": "dbp:os",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/rootAccess",
+            "predicate": "dbp:rootAccess",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/releaseDate",
+            "predicate": "dbp:releaseDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/browser",
+            "predicate": "dbp:browser",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/protection",
+            "predicate": "dbp:protection",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/availableColours",
+            "predicate": "dbp:availableColours",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/release",
+            "predicate": "dbp:release",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/chipset",
+            "predicate": "dbp:chipset",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/importer",
+            "predicate": "dbp:importer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/technology",
+            "predicate": "dbp:technology",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/unrestrictedBootloader",
+            "predicate": "dbp:unrestrictedBootloader",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/colors",
+            "predicate": "dbp:colors",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/glass",
+            "predicate": "dbp:glass",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cost",
+            "predicate": "dbp:cost",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sarValues",
+            "predicate": "dbp:sarValues",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/modelName",
+            "predicate": "dbp:modelName",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/fingerprintReader",
+            "predicate": "dbp:fingerprintReader",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/mediaFormat",
+            "predicate": "dbp:mediaFormat",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/simCard",
+            "predicate": "dbp:simCard",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/color",
+            "predicate": "dbp:color",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/material",
+            "predicate": "dbp:material",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/unitsSold",
+            "predicate": "dbp:unitsSold",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/extDisplay",
+            "predicate": "dbp:extDisplay",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/audioTechnology",
+            "predicate": "dbp:audioTechnology",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/unitsshipped",
+            "predicate": "dbp:unitsshipped",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sensors",
+            "predicate": "dbp:sensors",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/features",
+            "predicate": "dbp:features",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/compatibleNetworks",
+            "predicate": "dbp:compatibleNetworks",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/gps",
+            "predicate": "dbp:gps",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/availableStorage",
+            "predicate": "dbp:availableStorage",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/skin",
+            "predicate": "dbp:skin",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/partnumber",
+            "predicate": "dbp:partnumber",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/collapsible",
+            "predicate": "dbp:collapsible",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/species",
+            "predicate": "dbp:species",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/voy",
+            "predicate": "dbp:voy",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/retailAvailablity",
+            "predicate": "dbp:retailAvailablity",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/lensOffset",
+            "predicate": "dbp:lensOffset",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/operatingSystem",
+            "predicate": "dbp:operatingSystem",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/browsingAndInternet",
+            "predicate": "dbp:browsingAndInternet",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/locationTechnologies",
+            "predicate": "dbp:locationTechnologies",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/otgSupport",
+            "predicate": "dbp:otgSupport",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/designer",
+            "predicate": "dbp:designer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/design",
+            "predicate": "dbp:design",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sim",
+            "predicate": "dbp:sim",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/mostRecentFirmware",
+            "predicate": "dbp:mostRecentFirmware",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/3gNetworkSpeed",
+            "predicate": "dbp:3gNetworkSpeed",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cameraFeatures",
+            "predicate": "dbp:cameraFeatures",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sensor",
+            "predicate": "dbp:sensor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/locationServices",
+            "predicate": "dbp:locationServices",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/processor",
+            "predicate": "dbp:processor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/nowSoftwareVersion",
+            "predicate": "dbp:nowSoftwareVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/latestFirmwareVersion",
+            "predicate": "dbp:latestFirmwareVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sarLevel",
+            "predicate": "dbp:sarLevel",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/colours",
+            "predicate": "dbp:colours",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/videoFormats",
+            "predicate": "dbp:videoFormats",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/exteriorScreen",
+            "predicate": "dbp:exteriorScreen",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/internalMemory",
+            "predicate": "dbp:internalMemory",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/resolution",
+            "predicate": "dbp:resolution",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sarValue",
+            "predicate": "dbp:sarValue",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ram.",
+            "predicate": "dbp:ram.",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ringtone'''_",
+            "predicate": "dbp:ringtone'''_",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/memorySlot",
+            "predicate": "dbp:memorySlot",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/openglEsSupport",
+            "predicate": "dbp:openglEsSupport",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/standbyTime",
+            "predicate": "dbp:standbyTime",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/talkTime",
+            "predicate": "dbp:talkTime",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/videoCamera",
+            "predicate": "dbp:videoCamera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/carrierLljkkjjkkjkj",
+            "predicate": "dbp:carrierLljkkjjkkjkj",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/newestModelDiscontinuation",
+            "predicate": "dbp:newestModelDiscontinuation",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/price.",
+            "predicate": "dbp:price.",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cameraName",
+            "predicate": "dbp:cameraName",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/fNumbers",
+            "predicate": "dbp:fNumbers",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/iproc",
+            "predicate": "dbp:iproc",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/lens",
+            "predicate": "dbp:lens",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/maker",
+            "predicate": "dbp:maker",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/rearlcd",
+            "predicate": "dbp:rearlcd",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/recordingMedium",
+            "predicate": "dbp:recordingMedium",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/res",
+            "predicate": "dbp:res",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sensorSize",
+            "predicate": "dbp:sensorSize",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/speedrange",
+            "predicate": "dbp:speedrange",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/multimedia",
+            "predicate": "dbp:multimedia",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/dimension",
+            "predicate": "dbp:dimension",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/output",
+            "predicate": "dbp:output",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/modelNumber",
+            "predicate": "dbp:modelNumber",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/builtInMemoryCard",
+            "predicate": "dbp:builtInMemoryCard",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/developer",
+            "predicate": "dbo:developer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/simCardType",
+            "predicate": "dbp:simCardType",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/navigation",
+            "predicate": "dbp:navigation",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/buttons",
+            "predicate": "dbp:buttons",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/float",
+            "predicate": "dbp:float",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/bands",
+            "predicate": "dbp:bands",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/playableFormats",
+            "predicate": "dbp:playableFormats",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/form",
+            "predicate": "dbp:form",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/keyboard",
+            "predicate": "dbp:keyboard",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/id",
+            "predicate": "dbp:id",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/body",
+            "predicate": "dbp:body",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/head",
+            "predicate": "dbp:head",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/foundingYear",
+            "predicate": "dbo:foundingYear",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/keyPeople",
+            "predicate": "dbp:keyPeople",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/camera/camcorder",
+            "predicate": "dbp:camera/camcorder",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/dataTransmission",
+            "predicate": "dbp:dataTransmission",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/hacRating",
+            "predicate": "dbp:hacRating",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/phoneType",
+            "predicate": "dbp:phoneType",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/standby",
+            "predicate": "dbp:standby",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/usageTime",
+            "predicate": "dbp:usageTime",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/frequency",
+            "predicate": "dbp:frequency",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/introduced",
+            "predicate": "dbp:introduced",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/currentSwVersion",
+            "predicate": "dbp:currentSwVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/formFactor",
+            "predicate": "dbp:formFactor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/webBrowsing",
+            "predicate": "dbp:webBrowsing",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/externalDisplay",
+            "predicate": "dbp:externalDisplay",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/data",
+            "predicate": "dbp:data",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/sarRating",
+            "predicate": "dbp:sarRating",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/internet",
+            "predicate": "dbp:internet",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/expiry",
+            "predicate": "dbp:expiry",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/peripherals",
+            "predicate": "dbp:peripherals",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/founders",
+            "predicate": "dbp:founders",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/packageManager",
+            "predicate": "dbp:packageManager",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/updatemodel",
+            "predicate": "dbp:updatemodel",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/workingState",
+            "predicate": "dbp:workingState",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ports",
+            "predicate": "dbp:ports",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/manufacturerCode",
+            "predicate": "dbp:manufacturerCode",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/onlineservice",
+            "predicate": "dbp:onlineservice",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/status",
+            "predicate": "dbp:status",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cpuspeed",
+            "predicate": "dbp:cpuspeed",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/ramMemory",
+            "predicate": "dbp:ramMemory",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/latestSoftwareVersion",
+            "predicate": "dbp:latestSoftwareVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/msrp",
+            "predicate": "dbp:msrp",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/colour",
+            "predicate": "dbp:colour",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/type",
+            "predicate": "dbo:type",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/c",
+            "predicate": "dbp:c",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/commons",
+            "predicate": "dbp:commons",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/d",
+            "predicate": "dbp:d",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/form",
+            "predicate": "dbp:form",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/serieslabel",
+            "predicate": "dbp:serieslabel",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/shape",
+            "predicate": "dbp:shape",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/type",
+            "predicate": "dbp:type",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://purl.org/dc/terms/subject",
+            "predicate": "dct:subject",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://purl.org/linguistics/gold/hypernym",
+            "predicate": "gold:hypernym",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "predicate": "rdf:type",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/exScreen",
+            "predicate": "dbp:exScreen",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/parentCompany",
+            "predicate": "dbo:parentCompany",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/areaServed",
+            "predicate": "dbp:areaServed",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/page",
+            "predicate": "dbp:page",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/batteryTechnology",
+            "predicate": "dbp:batteryTechnology",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/displayColour",
+            "predicate": "dbp:displayColour",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/primaryKeyboard",
+            "predicate": "dbp:primaryKeyboard",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/otherNames",
+            "predicate": "dbp:otherNames",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/networkDataConnectivity",
+            "predicate": "dbp:networkDataConnectivity",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/latestReleaseVersion",
+            "predicate": "dbo:latestReleaseVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/language",
+            "predicate": "dbp:language",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/certifications",
+            "predicate": "dbp:certifications",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/interface",
+            "predicate": "dbp:interface",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/headphones",
+            "predicate": "dbp:headphones",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/displaySize",
+            "predicate": "dbp:displaySize",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/displayType",
+            "predicate": "dbp:displayType",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/additionalFeatures",
+            "predicate": "dbp:additionalFeatures",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/phonebook",
+            "predicate": "dbp:phonebook",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/launched",
+            "predicate": "dbp:launched",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/radioTuner",
+            "predicate": "dbp:radioTuner",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/wiFi",
+            "predicate": "dbp:wiFi",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/re;ease",
+            "predicate": "dbp:re;ease",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/messaging",
+            "predicate": "dbp:messaging",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/soundRecording",
+            "predicate": "dbo:soundRecording",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/latestReleaseDate",
+            "predicate": "dbo:latestReleaseDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/graphicsProcessor",
+            "predicate": "dbp:graphicsProcessor",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/insideCamera",
+            "predicate": "dbp:insideCamera",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/imaging",
+            "predicate": "dbp:imaging",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/currentStatus",
+            "predicate": "dbp:currentStatus",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/variant",
+            "predicate": "dbp:variant",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/company",
+            "predicate": "dbp:company",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/launchYear",
+            "predicate": "dbp:launchYear",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/additionalFeature",
+            "predicate": "dbp:additionalFeature",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/musicPlayer",
+            "predicate": "dbp:musicPlayer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/phoneBookMemory",
+            "predicate": "dbp:phoneBookMemory",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/videoPlayer",
+            "predicate": "dbp:videoPlayer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/phoneStyle",
+            "predicate": "dbp:phoneStyle",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/communication",
+            "predicate": "dbp:communication",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/voiceCommand",
+            "predicate": "dbp:voiceCommand",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/cellularNetwork",
+            "predicate": "dbp:cellularNetwork",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/firstRelease",
+            "predicate": "dbp:firstRelease",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/att",
+            "predicate": "dbp:att",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/expandableMemory",
+            "predicate": "dbp:expandableMemory",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/fmRadio",
+            "predicate": "dbp:fmRadio",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/music&Video",
+            "predicate": "dbp:music&Video",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/radiationSar",
+            "predicate": "dbp:radiationSar",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/yearsActive",
+            "predicate": "dbp:yearsActive",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/mainScreen",
+            "predicate": "dbp:mainScreen",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/multitasking",
+            "predicate": "dbp:multitasking",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/accessdate",
+            "predicate": "dbp:accessdate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/year",
+            "predicate": "dbp:year",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/screenshotSize",
+            "predicate": "dbp:screenshotSize",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/imsize",
+            "predicate": "dbp:imsize",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/yearOfCreation",
+            "predicate": "dbp:yearOfCreation",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/releaseVersion",
+            "predicate": "dbp:releaseVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/supportStatus",
+            "predicate": "dbp:supportStatus",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/precededBy",
+            "predicate": "dbp:precededBy",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/previewVersion",
+            "predicate": "dbp:previewVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/latestPreviewVersion",
+            "predicate": "dbo:latestPreviewVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/height",
+            "predicate": "dbp:height",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/totalWidth",
+            "predicate": "dbp:totalWidth",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/latestReleaseDate",
+            "predicate": "dbp:latestReleaseDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/succeededBy",
+            "predicate": "dbp:succeededBy",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/versionOf",
+            "predicate": "dbp:versionOf",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/gaDate",
+            "predicate": "dbp:gaDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/formationYear",
+            "predicate": "dbo:formationYear",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/previewDate",
+            "predicate": "dbp:previewDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/latestTestVersion",
+            "predicate": "dbp:latestTestVersion",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/dissolved",
+            "predicate": "dbp:dissolved",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/services",
+            "predicate": "dbp:services",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/3g",
+            "predicate": "dbp:3g",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/ontology/designer",
+            "predicate": "dbo:designer",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/compatibleNetwork",
+            "predicate": "dbp:compatibleNetwork",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/bluetooth",
+            "predicate": "dbp:bluetooth",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/usb",
+            "predicate": "dbp:usb",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/gsmchoiceId",
+            "predicate": "dbp:gsmchoiceId",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/network",
+            "predicate": "dbp:network",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/networkType",
+            "predicate": "dbp:networkType",
             "mapTo": null,
             "export": false,
             "unit": "??",
             "structured": false
         },
         {
-            "predicate": "http://dbpedia.org/property/firstReleaseDate",
+            "predicate": "dbp:firstReleaseDate",
             "mapTo": null,
             "export": false,
             "unit": "??",
@@ -3201,248 +3201,248 @@
         }
     ],
     "irrelevant_predicates": [
-        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-        "http://dbpedia.org/ontology/wikiPageRedirects",
-        "http://dbpedia.org/ontology/wikiPageDisambiguates",
-        "http://xmlns.com/foaf/0.1/primaryTopic",
-        "http://dbpedia.org/ontology/broadcastArea",
-        "http://dbpedia.org/ontology/computingPlatform",
-        "http://dbpedia.org/ontology/industry",
-        "http://dbpedia.org/ontology/mediaType",
-        "http://dbpedia.org/ontology/product",
-        "http://dbpedia.org/property/platform",
-        "http://dbpedia.org/property/platforms",
-        "http://www.w3.org/2000/01/rdf-schema#label",
-        "http://www.w3.org/2000/01/rdf-schema#comment",
-        "http://www.w3.org/2002/07/owl#sameAs",
-        "http://dbpedia.org/ontology/wikiPageID",
-        "http://dbpedia.org/ontology/wikiPageRevisionID",
-        "http://dbpedia.org/ontology/wikiPageExternalLink",
-        "http://xmlns.com/foaf/0.1/name",
-        "http://xmlns.com/foaf/0.1/depiction",
-        "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
-        "http://dbpedia.org/ontology/thumbnail",
-        "http://www.w3.org/ns/prov#wasDerivedFrom",
-        "http://dbpedia.org/ontology/abstract",
-        "http://dbpedia.org/property/caption",
-        "http://dbpedia.org/property/imagesize",
-        "http://xmlns.com/foaf/0.1/homepage",
-        "http://dbpedia.org/property/logo",
-        "http://dbpedia.org/property/logoSize",
-        "http://dbpedia.org/property/website",
-        "http://dbpedia.org/ontology/title",
-        "http://dbpedia.org/property/aka",
-        "http://dbpedia.org/property/compatibility",
-        "http://xmlns.com/foaf/0.1/logo",
-        "http://www.w3.org/2002/07/owl#differentFrom",
-        "http://dbpedia.org/property/related",
-        "http://dbpedia.org/property/auto",
-        "http://dbpedia.org/property/reason",
-        "http://dbpedia.org/property/soc",
-        "http://dbpedia.org/property/seeAlso",
-        "http://dbpedia.org/property/slogan",
-        "http://dbpedia.org/property/logosize",
-        "http://dbpedia.org/property/title",
-        "http://dbpedia.org/property/alt",
-        "http://dbpedia.org/property/text",
-        "http://dbpedia.org/property/thumb",
-        "http://dbpedia.org/property/image",
-        "http://dbpedia.org/property/references",
-        "http://dbpedia.org/property/'''onlineServices'''_",
-        "http://dbpedia.org/property/name",
-        "http://dbpedia.org/property/alternateName",
-        "http://dbpedia.org/property/archivedWebpage",
-        "http://dbpedia.org/property/homepage",
-        "http://dbpedia.org/property/imageSize",
-        "http://dbpedia.org/property/country",
-        "http://dbpedia.org/property/logoalt",
-        "http://dbpedia.org/property/users",
-        "http://dbpedia.org/property/forum",
-        "http://dbpedia.org/property/p",
-        "http://dbpedia.org/property/s",
-        "http://dbpedia.org/property/t",
-        "http://dbpedia.org/property/url",
-        "http://dbpedia.org/property/wikt",
-        "http://dbpedia.org/property/footer",
-        "http://dbpedia.org/property/header",
-        "http://dbpedia.org/property/imageCaption",
-        "http://dbpedia.org/property/imageWidth",
-        "http://dbpedia.org/property/link",
-        "http://dbpedia.org/ontology/birthPlace",
-        "http://dbpedia.org/ontology/birthDate",
-        "http://dbpedia.org/property/nameindarOad",
-        "http://dbpedia.org/property/designedFor",
-        "http://dbpedia.org/ontology/author",
-        "http://dbpedia.org/ontology/genre",
-        "http://dbpedia.org/property/license",
-        "http://dbpedia.org/property/screenshot",
-        "http://dbpedia.org/property/left",
-        "http://dbpedia.org/property/right",
-        "http://dbpedia.org/property/titlebar",
-        "http://dbpedia.org/ontology/division",
-        "http://dbpedia.org/ontology/equipment",
-        "http://dbpedia.org/ontology/keyPerson",
-        "http://dbpedia.org/ontology/occupation",
-        "http://dbpedia.org/ontology/publisher",
-        "http://dbpedia.org/ontology/service",
-        "http://dbpedia.org/property/producttype",
-        "http://dbpedia.org/property/marketingTarget",
-        "http://dbpedia.org/property/origins",
-        "http://dbpedia.org/property/platformOfOrigin",
-        "http://dbpedia.org/property/tv",
-        "http://dbpedia.org/ontology/locationCity",
-        "http://dbpedia.org/ontology/locationCountry",
-        "http://dbpedia.org/property/homePage",
-        "http://dbpedia.org/property/carrierNeverAvailable",
-        "http://dbpedia.org/property/b",
-        "http://dbpedia.org/property/m",
-        "http://dbpedia.org/property/mw",
-        "http://dbpedia.org/property/n",
-        "http://dbpedia.org/property/q",
-        "http://dbpedia.org/property/small",
-        "http://dbpedia.org/property/v",
-        "http://dbpedia.org/property/supported",
-        "http://dbpedia.org/property/bodystyle",
-        "http://dbpedia.org/property/kernelType",
-        "http://dbpedia.org/property/programmedIn",
-        "http://dbpedia.org/property/sourceModel",
-        "http://dbpedia.org/property/supportedPlatforms",
-        "http://dbpedia.org/property/ui",
-        "http://dbpedia.org/property/screenshot.",
-        "http://dbpedia.org/ontology/internationally",
-        "http://dbpedia.org/ontology/location",
-        "http://dbpedia.org/ontology/numberOfEmployees",
-        "http://dbpedia.org/ontology/revenue",
-        "http://dbpedia.org/property/quote",
-        "http://dbpedia.org/property/source",
-        "http://dbpedia.org/property/bot",
-        "http://dbpedia.org/property/fixAttempted",
-        "http://dbpedia.org/property/inaccurate",
-        "http://dbpedia.org/property/mainRival",
-        "http://dbpedia.org/property/hqLocationCity",
-        "http://dbpedia.org/property/hqLocationCountry",
-        "http://dbpedia.org/property/officialWebsite",
-        "http://dbpedia.org/property/author",
-        "http://dbpedia.org/property/wordnet_type",
-        "http://dbpedia.org/property/border",
-        "http://dbpedia.org/property/salign",
-        "http://dbpedia.org/property/cname",
-        "http://dbpedia.org/property/work",
-        "http://dbpedia.org/ontology/license",
-        "http://dbpedia.org/property/logoCaption",
-        "http://dbpedia.org/property/flagship",
-        "http://dbpedia.org/ontology/netIncome",
-        "http://dbpedia.org/ontology/numberOfLocations",
-        "http://dbpedia.org/property/industry",
-        "http://dbpedia.org/property/locationCity",
-        "http://dbpedia.org/ontology/owner",
-        "http://dbpedia.org/ontology/Software/fileSize",
-        "http://dbpedia.org/ontology/fileSize",
-        "http://dbpedia.org/ontology/language",
-        "http://dbpedia.org/ontology/frequentlyUpdated",
-        "http://dbpedia.org/property/hangul",
-        "http://dbpedia.org/property/mr",
-        "http://dbpedia.org/property/needed",
-        "http://dbpedia.org/property/rr",
-        "http://dbpedia.org/property/inventor",
-        "http://dbpedia.org/property/importantApps",
-        "http://dbpedia.org/property/synonyms",
-        "http://dbpedia.org/ontology/foundedBy",
-        "http://dbpedia.org/ontology/foundingDate",
-        "http://dbpedia.org/ontology/subsidiary",
-        "http://dbpedia.org/property/section",
-        "http://dbpedia.org/property/hardwarePlatform",
-        "http://dbpedia.org/property/,VideoRecordingQvga(320x240)2ndCamera",
-        "http://dbpedia.org/ontology/foundationPlace",
-        "http://dbpedia.org/ontology/regionServed",
-        "http://dbpedia.org/ontology/icd10",
-        "http://dbpedia.org/ontology/icd9",
-        "http://dbpedia.org/ontology/meshId",
-        "http://dbpedia.org/property/diseasesdb",
-        "http://dbpedia.org/property/emedicinesubj",
-        "http://dbpedia.org/property/emedicinetopic",
-        "http://dbpedia.org/property/field",
-        "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
-        "http://www.w3.org/2003/01/geo/wgs84_pos#long",
-        "http://www.w3.org/2003/01/geo/wgs84_pos#geometry",
-        "http://dbpedia.org/ontology/assets",
-        "http://dbpedia.org/ontology/equity",
-        "http://www.georss.org/georss/point",
-        "http://dbpedia.org/property/colwidth",
-        "http://dbpedia.org/property/nativeName",
-        "http://dbpedia.org/property/nativeNameLang",
-        "http://dbpedia.org/property/refs",
-        "http://dbpedia.org/property/eBookReader",
-        "http://dbpedia.org/property/explain",
-        "http://dbpedia.org/property/firstAppearance",
-        "http://dbpedia.org/property/posting",
-        "http://dbpedia.org/property/affiliation",
-        "http://dbpedia.org/property/bgcolor",
-        "http://dbpedia.org/property/father",
-        "http://dbpedia.org/property/gender",
-        "http://dbpedia.org/property/mother",
-        "http://dbpedia.org/property/planet",
-        "http://dbpedia.org/property/portrayer",
-        "http://dbpedia.org/property/position",
-        "http://dbpedia.org/property/rank",
-        "http://purl.org/dc/terms/description",
-        "http://xmlns.com/foaf/0.1/givenName",
-        "http://xmlns.com/foaf/0.1/gender",
-        "http://xmlns.com/foaf/0.1/surname",
-        "http://dbpedia.org/ontology/birthName",
-        "http://dbpedia.org/ontology/employer",
-        "http://dbpedia.org/property/nationality",
-        "http://dbpedia.org/property/desolved",
-        "http://dbpedia.org/property/locationCountry",
-        "http://dbpedia.org/ontology/programmingLanguage",
-        "http://dbpedia.org/property/progLanguage",
-        "http://dbpedia.org/property/fontsize",
-        "http://dbpedia.org/property/genre",
-        "http://dbpedia.org/property/licence",
-        "http://dbpedia.org/property/footerAlign",
-        "http://dbpedia.org/property/label",
-        "http://dbpedia.org/property/value",
-        "http://dbpedia.org/property/userland",
-        "http://dbpedia.org/property/languageCount",
-        "http://dbpedia.org/property/logoAlt",
-        "http://dbpedia.org/property/focus",
-        "http://dbpedia.org/property/products",
-        "http://dbpedia.org/property/%3F_",
-        "http://dbpedia.org/property/l",
-        "http://dbpedia.org/ontology/extinctionDate",
-        "http://dbpedia.org/ontology/extinctionYear",
-        "http://dbpedia.org/ontology/fate",
-        "http://dbpedia.org/property/founder",
-        "http://dbpedia.org/property/locations",
-        "http://dbpedia.org/property/previewUrl",
-        "http://dbpedia.org/property/paradigm",
-        "http://dbpedia.org/property/programmingLanguage",
-        "http://dbpedia.org/property/others",
-        "http://dbpedia.org/ontology/operatingIncome",
-        "http://dbpedia.org/property/companySlogan",
-        "http://dbpedia.org/property/above",
-        "http://dbpedia.org/property/decimal",
-        "http://dbpedia.org/property/ipaNumber",
-        "http://dbpedia.org/property/ipaSymbol",
-        "http://dbpedia.org/property/langcode",
-        "http://dbpedia.org/property/otherarticle",
-        "http://dbpedia.org/property/currentowner",
-        "http://dbpedia.org/property/logocaption",
-        "http://dbpedia.org/property/markets",
-        "http://dbpedia.org/property/netIncome",
-        "http://dbpedia.org/property/revenue",
-        "http://dbpedia.org/property/trademarkregistrations",
-        "http://dbpedia.org/property/tagline",
-        "http://dbpedia.org/property/ambassadors",
-        "http://dbpedia.org/property/extension",
-        "http://dbpedia.org/property/owner",
-        "http://dbpedia.org/property/registration",
-        "http://dbpedia.org/property/alexa",
-        "http://dbpedia.org/property/commercial",
-        "http://dbpedia.org/property/replacedBy",
-        "http://dbpedia.org/property/replaces",
-        "http://dbpedia.org/property/ceo",
-        "http://dbpedia.org/property/no.OfEmployees",
-        "http://dbpedia.org/property/foundation"
+        "rdfs:seeAlso",
+        "dbo:wikiPageRedirects",
+        "dbo:wikiPageDisambiguates",
+        "foaf:primaryTopic",
+        "dbo:broadcastArea",
+        "dbo:computingPlatform",
+        "dbo:industry",
+        "dbo:mediaType",
+        "dbo:product",
+        "dbp:platform",
+        "dbp:platforms",
+        "rdfs:label",
+        "rdfs:comment",
+        "owl:sameAs",
+        "dbo:wikiPageID",
+        "dbo:wikiPageRevisionID",
+        "dbo:wikiPageExternalLink",
+        "foaf:name",
+        "foaf:depiction",
+        "foaf:isPrimaryTopicOf",
+        "dbo:thumbnail",
+        "prov:wasDerivedFrom",
+        "dbo:abstract",
+        "dbp:caption",
+        "dbp:imagesize",
+        "foaf:homepage",
+        "dbp:logo",
+        "dbp:logoSize",
+        "dbp:website",
+        "dbo:title",
+        "dbp:aka",
+        "dbp:compatibility",
+        "foaf:logo",
+        "owl:differentFrom",
+        "dbp:related",
+        "dbp:auto",
+        "dbp:reason",
+        "dbp:soc",
+        "dbp:seeAlso",
+        "dbp:slogan",
+        "dbp:logosize",
+        "dbp:title",
+        "dbp:alt",
+        "dbp:text",
+        "dbp:thumb",
+        "dbp:image",
+        "dbp:references",
+        "dbp:'''onlineServices'''_",
+        "dbp:name",
+        "dbp:alternateName",
+        "dbp:archivedWebpage",
+        "dbp:homepage",
+        "dbp:imageSize",
+        "dbp:country",
+        "dbp:logoalt",
+        "dbp:users",
+        "dbp:forum",
+        "dbp:p",
+        "dbp:s",
+        "dbp:t",
+        "dbp:url",
+        "dbp:wikt",
+        "dbp:footer",
+        "dbp:header",
+        "dbp:imageCaption",
+        "dbp:imageWidth",
+        "dbp:link",
+        "dbo:birthPlace",
+        "dbo:birthDate",
+        "dbp:nameindarOad",
+        "dbp:designedFor",
+        "dbo:author",
+        "dbo:genre",
+        "dbp:license",
+        "dbp:screenshot",
+        "dbp:left",
+        "dbp:right",
+        "dbp:titlebar",
+        "dbo:division",
+        "dbo:equipment",
+        "dbo:keyPerson",
+        "dbo:occupation",
+        "dbo:publisher",
+        "dbo:service",
+        "dbp:producttype",
+        "dbp:marketingTarget",
+        "dbp:origins",
+        "dbp:platformOfOrigin",
+        "dbp:tv",
+        "dbo:locationCity",
+        "dbo:locationCountry",
+        "dbp:homePage",
+        "dbp:carrierNeverAvailable",
+        "dbp:b",
+        "dbp:m",
+        "dbp:mw",
+        "dbp:n",
+        "dbp:q",
+        "dbp:small",
+        "dbp:v",
+        "dbp:supported",
+        "dbp:bodystyle",
+        "dbp:kernelType",
+        "dbp:programmedIn",
+        "dbp:sourceModel",
+        "dbp:supportedPlatforms",
+        "dbp:ui",
+        "dbp:screenshot.",
+        "dbo:internationally",
+        "dbo:location",
+        "dbo:numberOfEmployees",
+        "dbo:revenue",
+        "dbp:quote",
+        "dbp:source",
+        "dbp:bot",
+        "dbp:fixAttempted",
+        "dbp:inaccurate",
+        "dbp:mainRival",
+        "dbp:hqLocationCity",
+        "dbp:hqLocationCountry",
+        "dbp:officialWebsite",
+        "dbp:author",
+        "dbp:wordnet_type",
+        "dbp:border",
+        "dbp:salign",
+        "dbp:cname",
+        "dbp:work",
+        "dbo:license",
+        "dbp:logoCaption",
+        "dbp:flagship",
+        "dbo:netIncome",
+        "dbo:numberOfLocations",
+        "dbp:industry",
+        "dbp:locationCity",
+        "dbo:owner",
+        "dbo:Software/fileSize",
+        "dbo:fileSize",
+        "dbo:language",
+        "dbo:frequentlyUpdated",
+        "dbp:hangul",
+        "dbp:mr",
+        "dbp:needed",
+        "dbp:rr",
+        "dbp:inventor",
+        "dbp:importantApps",
+        "dbp:synonyms",
+        "dbo:foundedBy",
+        "dbo:foundingDate",
+        "dbo:subsidiary",
+        "dbp:section",
+        "dbp:hardwarePlatform",
+        "dbp:,VideoRecordingQvga(320x240)2ndCamera",
+        "dbo:foundationPlace",
+        "dbo:regionServed",
+        "dbo:icd10",
+        "dbo:icd9",
+        "dbo:meshId",
+        "dbp:diseasesdb",
+        "dbp:emedicinesubj",
+        "dbp:emedicinetopic",
+        "dbp:field",
+        "wgs84:lat",
+        "wgs84:long",
+        "wgs84:geometry",
+        "dbo:assets",
+        "dbo:equity",
+        "georss:point",
+        "dbp:colwidth",
+        "dbp:nativeName",
+        "dbp:nativeNameLang",
+        "dbp:refs",
+        "dbp:eBookReader",
+        "dbp:explain",
+        "dbp:firstAppearance",
+        "dbp:posting",
+        "dbp:affiliation",
+        "dbp:bgcolor",
+        "dbp:father",
+        "dbp:gender",
+        "dbp:mother",
+        "dbp:planet",
+        "dbp:portrayer",
+        "dbp:position",
+        "dbp:rank",
+        "dct:description",
+        "foaf:givenName",
+        "foaf:gender",
+        "foaf:surname",
+        "dbo:birthName",
+        "dbo:employer",
+        "dbp:nationality",
+        "dbp:desolved",
+        "dbp:locationCountry",
+        "dbo:programmingLanguage",
+        "dbp:progLanguage",
+        "dbp:fontsize",
+        "dbp:genre",
+        "dbp:licence",
+        "dbp:footerAlign",
+        "dbp:label",
+        "dbp:value",
+        "dbp:userland",
+        "dbp:languageCount",
+        "dbp:logoAlt",
+        "dbp:focus",
+        "dbp:products",
+        "dbp:%3F_",
+        "dbp:l",
+        "dbo:extinctionDate",
+        "dbo:extinctionYear",
+        "dbo:fate",
+        "dbp:founder",
+        "dbp:locations",
+        "dbp:previewUrl",
+        "dbp:paradigm",
+        "dbp:programmingLanguage",
+        "dbp:others",
+        "dbo:operatingIncome",
+        "dbp:companySlogan",
+        "dbp:above",
+        "dbp:decimal",
+        "dbp:ipaNumber",
+        "dbp:ipaSymbol",
+        "dbp:langcode",
+        "dbp:otherarticle",
+        "dbp:currentowner",
+        "dbp:logocaption",
+        "dbp:markets",
+        "dbp:netIncome",
+        "dbp:revenue",
+        "dbp:trademarkregistrations",
+        "dbp:tagline",
+        "dbp:ambassadors",
+        "dbp:extension",
+        "dbp:owner",
+        "dbp:registration",
+        "dbp:alexa",
+        "dbp:commercial",
+        "dbp:replacedBy",
+        "dbp:replaces",
+        "dbp:ceo",
+        "dbp:no.OfEmployees",
+        "dbp:foundation"
     ]
 }

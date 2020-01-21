@@ -1,7 +1,5 @@
 import './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
-# import { input } from 'https://raw.githubusercontent.com/johnsonjo4531/read_lines/v2.1.0/input.ts'
-import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
 # import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
 writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
@@ -29,10 +27,9 @@ do =>
 	subject_query_conditions = defining_identifiers
 		.map (identifier) =>
 			"{ ?subject <#{identifier.predicate}> #{
-				if identifier.object.match /^http:\/\/dbpedia\.org/
-					"<#{identifier.object}>"
-				# TODO:
-				else "\"#{identifier.object}\"^^rdf:langString"
+				if not identifier.object.match /^[a-z]+:.+/
+					# TODO
+					"\"#{identifier.object}\"^^rdf:langString"
 			} }"
 		.join "\nUNION\n"
 	all_results = await query """
@@ -53,7 +50,7 @@ do =>
 		data.push data_row
 		data_row.resource = subject
 		console.debug dim "#{i+1} / #{subjects.length}"
-		subject_results = await query "select * where { <#{subject}> ?predicate ?object }"
+		subject_results = await query "select * where { #{subject} ?predicate ?object }"
 		for identifier from subject_results
 			if relevant_predicates.includes identifier.predicate
 				if data_row[identifier.predicate]

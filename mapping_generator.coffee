@@ -61,7 +61,7 @@ checked_objects = []
 checked_identifiers = []
 
 ask_for_identifier = (subjects, predicate, object) =>
-	console.log "### Statement: ?subject <#{yellow predicate}> <#{yellow object}> ###"
+	console.log "### Statement: ?subject #{yellow predicate} #{yellow object} ###"
 	if subjects
 		console.log gray "?subject is i.a. ..." +
 			green "#{subjects[0..5]}, #{subjects.length} in total"
@@ -85,7 +85,7 @@ ask_for_identifier = (subjects, predicate, object) =>
 				console.log 'QUERYING SUBJECTS FOR NEW DEFINING IDENTIFIER, ALL TO BE ADDED TO OPEN_SUBJECTS'
 				results = await query """
 				select ?subject where {
-					?subject <#{predicate}> <#{object}>
+					?subject #{predicate} #{object}
 				}"""
 				subjects = results.map 'subject'
 			for subject from subjects
@@ -112,15 +112,15 @@ ask_for_identifier = (subjects, predicate, object) =>
 			checked_predicates.push predicate
 
 investigate_identifier = (predicate, object) =>
-	console.debug gray "investigate identifier: ?subject <#{predicate}> <#{object}>"
+	console.debug gray "investigate identifier: ?subject #{predicate} #{object}"
 	results = await query """
 	select ?subject where {
-		?subject <#{predicate}> <#{object}>
+		?subject #{predicate} #{object}
 	}
 	# limit 2"""
 	# console.dir results
 	for { subject } from results
-		console.log "### <#{yellow subject}> ###"
+		console.log "### #{yellow subject} ###"
 		console.log italic "Find more out about it (multiple choices possible): its [p]roperties, as [o]bject, [nothing] irrelevant? "
 		choice = await readLine '> '
 		if choice.includes 'p'
@@ -134,10 +134,10 @@ investigate_identifier = (predicate, object) =>
 	checked_identifiers.push "#{predicate} #{object}"
 
 investigate_subject = (subject) =>
-	console.debug gray "investigate subject: <#{subject}> ?predicate ?object"
+	console.debug gray "investigate subject: #{subject} ?predicate ?object"
 	results = await query """
 	select * where {
-		<#{subject}> ?predicate ?object
+		#{subject} ?predicate ?object
 	}
 	# limit 2"""
 	# console.dir results
@@ -153,7 +153,7 @@ investigate_subject = (subject) =>
 		if results.length == 1
 			await ask_for_identifier null, predicate, results[0].object
 		else
-			console.log "### Statement: ?subject <#{yellow predicate}> ?object ###"
+			console.log "### Statement: ?subject #{yellow predicate} ?object ###"
 			console.log gray "Sample objects: " +
 				green "#{results[0..5].map 'object'}, #{results.length} in total"
 			console.log italic "This predicate is: [r]elevant, [t]raverse investigate: ask again seperately for all #{results.length} identifiers, [nothing] irrelevant? "
@@ -173,10 +173,10 @@ investigate_subject = (subject) =>
 	checked_subjects.push subject
 
 investigate_object = (object) =>
-	console.debug gray "investigate object: ?subject ?predicate <#{object}>"
+	console.debug gray "investigate object: ?subject ?predicate #{object}"
 	results = await query """
 	select * where {
-		?subject ?predicate <#{object}>
+		?subject ?predicate #{object}
 	}
 	# limit 2"""
 	# console.dir results
@@ -227,9 +227,9 @@ do =>
 		####
 		query_conditions = defining_identifiers
 			.map (identifier) =>
-				"{ ?subject <#{identifier.predicate}> #{
+				"{ ?subject #{identifier.predicate} #{
 					if identifier.object.match /^http:\/\/dbpedia\.org/
-						"<#{identifier.object}>"
+						"#{identifier.object}"
 					# TODO:
 					else "\"#{identifier.object}\"^^rdf:langString"
 				} }"
@@ -243,9 +243,9 @@ do =>
 		open_subjects = new Set
 		console.debug dim "Finding all subjects for existing defining_identifiers..."
 		for identifier from defining_identifiers
-			query_condition = "?subject <#{identifier.predicate}> #{
+			query_condition = "?subject #{identifier.predicate} #{
 					if identifier.object.match /^http:\/\/dbpedia\.org/
-						"<#{identifier.object}>"
+						"#{identifier.object}"
 					# TODO:
 					else "\"#{identifier.object}\"^^rdf:langString"
 			}"
