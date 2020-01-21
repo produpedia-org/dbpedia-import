@@ -19,7 +19,7 @@ do =>
 		
 	{ defining_identifiers, relevant_predicates } = existing_mapping
 
-	relevant_predicates.push 'http://www.w3.org/2000/01/rdf-schema#label'
+	relevant_predicates.push 'rdfs:label'
 
 	data = []
 	
