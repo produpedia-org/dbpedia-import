@@ -1091,2113 +1091,1080 @@
             "object": "Phablet"
         }
     ],
+    "irrelevant_subjects": [
+        "dbr:.NET_Compact_Framework_controls",
+        "dbr:ASIMO",
+        "dbr:Android_(operating_system)",
+        "dbr:Android_software_development",
+        "dbr:Asus_Zen_UI",
+        "dbr:Bada",
+        "dbr:BlackBerry_OS",
+        "dbr:Bullitt_Group",
+        "dbr:COS_(operating_system)",
+        "dbr:Carrier_IQ",
+        "dbr:Celio_Technology_Corporation",
+        "dbr:Claro_El_Salvador",
+        "dbr:Creative_Technology_Limited",
+        "dbr:CyanogenMod",
+        "dbr:Firefox_OS",
+        "dbr:Google_Play",
+        "dbr:H2O_Wireless",
+        "dbr:HUBO",
+        "dbr:Haitel",
+        "dbr:Hookflash",
+        "dbr:IOS",
+        "dbr:Intex_Technologies",
+        "dbr:LG_Lotus_(LX600)",
+        "dbr:List_of_Motorola_V_series_phones",
+        "dbr:LuneOS",
+        "dbr:MeeGo",
+        "dbr:Microsoft_Mobile",
+        "dbr:Mobile-Spy",
+        "dbr:Mobile_Web_Server",
+        "dbr:Mobilinux",
+        "dbr:MyRatePlan.com",
+        "dbr:My_Phone",
+        "dbr:Nokia_Asha_platform",
+        "dbr:Nokia_Browser_for_Symbian",
+        "dbr:Nokia_PC_Suite",
+        "dbr:Nokia_Suite",
+        "dbr:OPhone",
+        "dbr:P.I.P.S.",
+        "dbr:PocketBook_International",
+        "dbr:PrivatOS",
+        "dbr:Python_for_S60",
+        "dbr:Qt_Extended",
+        "dbr:REEM",
+        "dbr:SHR_(operating_system)",
+        "dbr:Sailfish_OS",
+        "dbr:Samsung",
+        "dbr:Saygus",
+        "dbr:Sercomtel",
+        "dbr:Sony_Xperia",
+        "dbr:Starmobile",
+        "dbr:Symbian",
+        "dbr:System_Center_Mobile_Device_Manager",
+        "dbr:The_Link_(retailer)",
+        "dbr:Tile_(software)",
+        "dbr:Tizen",
+        "dbr:TracFone_Wireless",
+        "dbr:Ubuntu_Touch",
+        "dbr:Unefón",
+        "dbr:Vertu",
+        "dbr:Walton_Micro-Tech_Corporation",
+        "dbr:WebOS",
+        "dbr:Windows_10_Mobile",
+        "dbr:Windows_Mobile",
+        "dbr:Windows_Mobile_6.5",
+        "dbr:Windows_Phone",
+        "dbr:Windows_Phone_7",
+        "dbr:Windows_Phone_8.1",
+        "dbr:XenMobile"
+    ],
     "relevant_predicates": [
         {
             "predicate": "dbo:cpu",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:cpu"
         },
         {
             "predicate": "dbo:manufacturer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:manufacturer"
         },
         {
             "predicate": "dbo:operatingSystem",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:operatingSystem"
         },
         {
             "predicate": "dbo:weight",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:weight"
         },
         {
             "predicate": "dbp:camera",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:connectivity",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:dimensions",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:display",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:input",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:releasedate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:lifespan",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:media",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:power",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:battery"
         },
         {
             "predicate": "dbp:carrier",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:hac",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "enum"
         },
         {
             "predicate": "dbp:memory",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ram"
         },
         {
             "predicate": "dbo:predecessor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:predecessor"
         },
         {
             "predicate": "dbo:successor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:successor"
         },
         {
             "predicate": "dbp:cpu",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:touchpad",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:operatingsystem",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:operatingSystem"
         },
         {
             "predicate": "dbp:graphics",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:gpu"
         },
         {
             "predicate": "dbp:music",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:service",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:sound",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:storage",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "MB",
+            "type": "int"
         },
         {
             "predicate": "dbp:video",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:volume",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "unknown",
+            "type": "float"
         },
         {
             "predicate": "dbp:controllers",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:developer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:family",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:generation",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:price",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "$"
         },
         {
             "predicate": "dbp:weight",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "g",
+            "type": "float"
         },
         {
             "predicate": "dbp:battery",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "mAh",
+            "type": "int"
         },
         {
             "predicate": "dbp:discontinued",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:location",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "date"
         },
         {
             "predicate": "dbp:date",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:unitssold",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:unitsSold"
         },
         {
             "predicate": "dbp:manufacturer",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbo:status",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:available",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:successor",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:networks",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:rearCamera",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:videoRecording",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:gpu",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:size",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:carriers",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:carrier"
         },
         {
             "predicate": "dbp:screen",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:codename",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:memoryCard",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:memorySlot"
         },
         {
             "predicate": "dbp:other",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:2ndCamera",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:frontCamera"
         },
         {
             "predicate": "dbp:ringtone",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:ringtones",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ringtone"
         },
         {
             "predicate": "dbp:predecessor",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:series",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:mediaFormats",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:frontCamera",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:modelnumber",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:modelNumber"
         },
         {
             "predicate": "dbp:sar",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbo:releaseDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:after",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:successor"
         },
         {
             "predicate": "dbp:before",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:predecessor"
         },
         {
             "predicate": "dbp:years",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:model",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:center",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:testMode",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:ram",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:rom",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "MB",
+            "type": "int"
         },
         {
             "predicate": "dbp:brand",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:align",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:direction",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:manufacturer"
         },
         {
             "predicate": "dbp:width",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:audio",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sound"
         },
         {
             "predicate": "dbp:extScreen",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:externalDisplay"
         },
         {
             "predicate": "dbp:availability",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:announced",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "date"
         },
         {
             "predicate": "dbp:released",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:nfc",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:sensorType",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:seriesL",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:series"
         },
         {
             "predicate": "dbp:os",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:operatingSystem"
         },
         {
             "predicate": "dbp:rootAccess",
             "mapTo": null,
-            "export": false,
             "unit": "??",
-            "structured": false
+            "comment": "best make this type boolean and add rootable property (arent all phones rootable some way anyway?"
         },
         {
             "predicate": "dbp:releaseDate",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "date"
         },
         {
             "predicate": "dbp:browser",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:protection",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:availableColours",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:color"
         },
         {
             "predicate": "dbp:release",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:chipset",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:importer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:cpu"
         },
         {
             "predicate": "dbp:technology",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:unrestrictedBootloader",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:colors",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:color"
         },
         {
             "predicate": "dbp:glass",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:cost",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:price"
         },
         {
             "predicate": "dbp:sarValues",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sar"
         },
         {
             "predicate": "dbp:modelName",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:codename"
         },
         {
             "predicate": "dbp:fingerprintReader",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:mediaFormat",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:simCard",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:mediaFormats"
         },
         {
             "predicate": "dbp:color",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:material",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:unitsSold",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "int"
         },
         {
             "predicate": "dbp:extDisplay",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:externalDisplay"
         },
         {
             "predicate": "dbp:audioTechnology",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sound"
         },
         {
             "predicate": "dbp:unitsshipped",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:unitsSold"
         },
         {
             "predicate": "dbp:sensors",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:input"
         },
         {
             "predicate": "dbp:features",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:compatibleNetworks",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:gps",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:availableStorage",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:skin",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:partnumber",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:storage"
         },
         {
             "predicate": "dbp:collapsible",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:species",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:voy",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:retailAvailablity",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:lensOffset",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:operatingSystem",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:browsingAndInternet",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:browser"
         },
         {
             "predicate": "dbp:locationTechnologies",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:gps"
         },
         {
             "predicate": "dbp:otgSupport",
             "mapTo": null,
-            "export": false,
             "unit": "??",
-            "structured": false
+            "comment": "usb spec"
         },
         {
             "predicate": "dbp:designer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:design"
         },
         {
             "predicate": "dbp:design",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:sim",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:mostRecentFirmware",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:latestFirmwareVersion"
         },
         {
             "predicate": "dbp:3gNetworkSpeed",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:cameraFeatures",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:sensor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:locationServices",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:input"
         },
         {
             "predicate": "dbp:processor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:cpu"
         },
         {
             "predicate": "dbp:nowSoftwareVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:latestFirmwareVersion"
         },
         {
             "predicate": "dbp:latestFirmwareVersion",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:sarLevel",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sar"
         },
         {
             "predicate": "dbp:colours",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:color"
         },
         {
             "predicate": "dbp:videoFormats",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:exteriorScreen",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:externalDisplay"
         },
         {
             "predicate": "dbp:internalMemory",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ram"
         },
         {
             "predicate": "dbp:resolution",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:sarValue",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sar"
         },
         {
             "predicate": "dbp:ram.",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ram"
         },
         {
             "predicate": "dbp:ringtone'''_",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ringtone"
         },
         {
             "predicate": "dbp:memorySlot",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:openglEsSupport",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:standbyTime",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "minutes",
+            "type": "int"
         },
         {
             "predicate": "dbp:talkTime",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "minutes",
+            "type": "int"
         },
         {
             "predicate": "dbp:videoCamera",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:carrierLljkkjjkkjkj",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:camera"
         },
         {
             "predicate": "dbp:newestModelDiscontinuation",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:discontinued"
         },
         {
             "predicate": "dbp:price.",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:price"
         },
         {
             "predicate": "dbp:cameraName",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:fNumbers",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:iproc",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:lens",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:maker",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:rearlcd",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:recordingMedium",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:res",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:sensorSize",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:speedrange",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:camera"
         },
         {
             "predicate": "dbp:multimedia",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:mediaFormats"
         },
         {
             "predicate": "dbp:dimension",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:output",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:connectivity"
         },
         {
             "predicate": "dbp:modelNumber",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:builtInMemoryCard",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:storage"
         },
         {
             "predicate": "dbo:developer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:simCardType",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:manufacturer"
         },
         {
             "predicate": "dbp:navigation",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:gps"
         },
         {
             "predicate": "dbp:buttons",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:float",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:input"
         },
         {
             "predicate": "dbp:bands",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:playableFormats",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:mediaFormats"
         },
         {
             "predicate": "dbp:form",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "enum"
         },
         {
             "predicate": "dbp:keyboard",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:id",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:input"
         },
         {
             "predicate": "dbp:body",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:head",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:foundingYear",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:keyPeople",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:form"
         },
         {
             "predicate": "dbp:camera/camcorder",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:camera"
         },
         {
             "predicate": "dbp:dataTransmission",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:hacRating",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:phoneType",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:hac"
         },
         {
             "predicate": "dbp:standby",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:standbyTime"
         },
         {
             "predicate": "dbp:usageTime",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:talkTime"
         },
         {
             "predicate": "dbp:frequency",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:introduced",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:announced"
         },
         {
             "predicate": "dbp:currentSwVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:latestFirmwareVersion"
         },
         {
             "predicate": "dbp:formFactor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:form"
         },
         {
             "predicate": "dbp:webBrowsing",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:browser"
         },
         {
             "predicate": "dbp:externalDisplay",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:data",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:sarRating",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sar"
         },
         {
             "predicate": "dbp:internet",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:expiry",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:browser"
         },
         {
             "predicate": "dbp:peripherals",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:founders",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:packageManager",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:updatemodel",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:workingState",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:connectivity"
         },
         {
             "predicate": "dbp:ports",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:connectivity"
         },
         {
             "predicate": "dbp:manufacturerCode",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:modelNumber"
         },
         {
             "predicate": "dbp:onlineservice",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:status",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:cpuspeed",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:cpu"
         },
         {
             "predicate": "dbp:ramMemory",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ram"
         },
         {
             "predicate": "dbp:latestSoftwareVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:latestFirmwareVersion"
         },
         {
             "predicate": "dbp:msrp",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:price"
         },
         {
             "predicate": "dbp:colour",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:color"
         },
         {
             "predicate": "dbo:type",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:c",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:commons",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:d",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:form",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:serieslabel",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:shape",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:type",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dct:subject",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "gold:hypernym",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "rdf:type",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "export": false
         },
         {
             "predicate": "dbp:exScreen",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:parentCompany",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:areaServed",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:page",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:externalDisplay"
         },
         {
             "predicate": "dbp:batteryTechnology",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "resource"
         },
         {
             "predicate": "dbp:displayColour",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:primaryKeyboard",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:otherNames",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:networkDataConnectivity",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:latestReleaseVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:language",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:certifications",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "string"
         },
         {
             "predicate": "dbp:interface",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:input"
         },
         {
             "predicate": "dbp:headphones",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sound"
         },
         {
             "predicate": "dbp:displaySize",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:displayType",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:additionalFeatures",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:phonebook",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:launched",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:radioTuner",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:fmRadio"
         },
         {
             "predicate": "dbp:wiFi",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:re;ease",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:messaging",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:soundRecording",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:latestReleaseDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:graphicsProcessor",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:gpu"
         },
         {
             "predicate": "dbp:insideCamera",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:frontCamera"
         },
         {
             "predicate": "dbp:imaging",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:camera"
         },
         {
             "predicate": "dbp:currentStatus",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:variant",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:company",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:manufacturer"
         },
         {
             "predicate": "dbp:launchYear",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:additionalFeature",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:musicPlayer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:phoneBookMemory",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:music"
         },
         {
             "predicate": "dbp:videoPlayer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:videoFormats"
         },
         {
             "predicate": "dbp:phoneStyle",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:form"
         },
         {
             "predicate": "dbp:communication",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:voiceCommand",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:cellularNetwork",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:firstRelease",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:att",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:expandableMemory",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:ram"
         },
         {
             "predicate": "dbp:fmRadio",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": null,
+            "type": "boolean"
         },
         {
             "predicate": "dbp:music&Video",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:mediaFormats"
         },
         {
             "predicate": "dbp:radiationSar",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:sar"
         },
         {
             "predicate": "dbp:yearsActive",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:mainScreen",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:multitasking",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:accessdate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:display"
         },
         {
             "predicate": "dbp:year",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:screenshotSize",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:imsize",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:yearOfCreation",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:releaseVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:supportStatus",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         },
         {
             "predicate": "dbp:precededBy",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:previewVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:latestPreviewVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:predecessor"
         },
         {
             "predicate": "dbp:height",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:totalWidth",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:latestReleaseDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:width"
         },
         {
             "predicate": "dbp:succeededBy",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:versionOf",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:gaDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbo:formationYear",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:previewDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:latestTestVersion",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
-        },
-        {
-            "predicate": "dbp:dissolved",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:successor"
         },
         {
             "predicate": "dbp:services",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:other"
         },
         {
             "predicate": "dbp:3g",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbo:designer",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:design"
         },
         {
             "predicate": "dbp:compatibleNetwork",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:bluetooth",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:usb",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:gsmchoiceId",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:network",
             "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "unit": "??"
         },
         {
             "predicate": "dbp:networkType",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:network"
         },
         {
             "predicate": "dbp:firstReleaseDate",
-            "mapTo": null,
-            "export": false,
-            "unit": "??",
-            "structured": false
+            "mapTo": "dbp:releaseDate"
         }
     ],
     "irrelevant_predicates": [
@@ -3443,6 +2410,72 @@
         "dbp:replaces",
         "dbp:ceo",
         "dbp:no.OfEmployees",
-        "dbp:foundation"
+        "dbp:foundation",
+        "dbp:dimensions",
+        "dbp:touchpad",
+        "dbp:developer",
+        "dbp:family",
+        "dbp:generation",
+        "dbp:location",
+        "dbp:videoRecording",
+        "dbp:model",
+        "dbp:center",
+        "dbp:testMode",
+        "dbp:rom",
+        "dbp:align",
+        "dbp:direction",
+        "dbp:sensorType",
+        "dbp:importer",
+        "dbp:simCard",
+        "dbp:partnumber",
+        "dbp:species",
+        "dbp:sim",
+        "dbp:locationServices",
+        "dbp:simCardType",
+        "dbp:float",
+        "dbp:head",
+        "dbo:foundingYear",
+        "dbp:keyPeople",
+        "dbp:phoneType",
+        "dbp:founders",
+        "dbp:packageManager",
+        "dbp:updatemodel",
+        "dbp:workingState",
+        "dbo:parentCompany",
+        "dbp:areaServed",
+        "dbp:page",
+        "dbp:otherNames",
+        "dbo:latestReleaseVersion",
+        "dbp:language",
+        "dbp:phonebook",
+        "dbp:messaging",
+        "dbo:soundRecording",
+        "dbo:latestReleaseDate",
+        "dbp:variant",
+        "dbp:phoneBookMemory",
+        "dbp:voiceCommand",
+        "dbp:att",
+        "dbp:multitasking",
+        "dbp:accessdate",
+        "dbp:screenshotSize",
+        "dbp:imsize",
+        "dbp:yearOfCreation",
+        "dbp:releaseVersion",
+        "dbp:supportStatus",
+        "dbp:previewVersion",
+        "dbo:latestPreviewVersion",
+        "dbp:latestReleaseDate",
+        "dbp:versionOf",
+        "dbp:gaDate",
+        "dbo:formationYear",
+        "dbp:previewDate",
+        "dbp:latestTestVersion",
+        "dbp:dissolved",
+        "dbp:skin",
+        "dbp:voy",
+        "dbp:lensOffset",
+        "dbp:carrierLljkkjjkkjkj",
+        "dbp:id",
+        "dbp:expiry"
     ]
 }
