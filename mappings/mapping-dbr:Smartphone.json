@@ -1179,8 +1179,7 @@
         },
         {
             "predicate": "dbp:camera",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:connectivity",
@@ -1663,8 +1662,7 @@
         },
         {
             "predicate": "dbp:cameraFeatures",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:sensor",
@@ -1746,7 +1744,7 @@
         },
         {
             "predicate": "dbp:videoCamera",
-            "mapTo": "dbp:camera"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:newestModelDiscontinuation",
@@ -1758,7 +1756,7 @@
         },
         {
             "predicate": "dbp:cameraName",
-            "mapTo": "dbp:camera"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:multimedia",
@@ -1818,7 +1816,7 @@
         },
         {
             "predicate": "dbp:camera/camcorder",
-            "mapTo": "dbp:camera"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:dataTransmission",
@@ -2032,7 +2030,7 @@
         },
         {
             "predicate": "dbp:imaging",
-            "mapTo": "dbp:camera"
+            "mapTo": "dbp:rearCamera"
         },
         {
             "predicate": "dbp:currentStatus",
