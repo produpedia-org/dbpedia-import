@@ -48,7 +48,6 @@ do =>
 		for predicate from relevant_predicates
 			value = row[predicate.predicate]
 			if value
-				# todo duplicate values
 				if predicate.mapTo
 					if transformed_row[predicate.mapTo]
 						transformed_row[predicate.mapTo] = transformed_row[predicate.mapTo] + "," + value
@@ -59,6 +58,11 @@ do =>
 						transformed_row[predicate.predicate] = transformed_row[predicate.predicate] + "," + value
 					else
 						transformed_row[predicate.predicate] = value
+	
+	# remove duplicate values
+	for row from transformed_data
+		for predicate, values of row
+			row[predicate] = [...new Set(values.split ',')].sort().join ','
 
 	console.debug gray dim 'write out json...'
 	await writeFile "data/data-#{resource_name}-transformed.json", JSON.stringify
