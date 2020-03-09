@@ -15,6 +15,10 @@ Object.defineProperty Array.prototype, 'map',
 		if typeof key == 'string'
 			return arrayMapOriginal.call this, (e) => e[key]
 		arrayMapOriginal.call this, key
+Object.defineProperty Array.prototype, 'uniq',
+	enumerable: false
+	value: ->
+		[...new Set(this)]
 
 window.sleep = (ms) =>
 	new Promise (ok) => setTimeout(ok, ms)

@@ -43,8 +43,7 @@ do =>
 	subjects = all_results
 		# todo do this in the query directly? I didnt manage to :(
 		.map (r) => r.redirectsTo or r.subject
-	# filter out duplicates from redirects
-	subjects = [...new Set(subjects)]
+		.uniq()
 
 	console.debug "get each relevant values"
 	for subject, i in subjects
@@ -52,13 +51,30 @@ do =>
 		data.push data_row
 		data_row.resource = subject
 		console.debug dim "#{i+1} / #{subjects.length}"
-		subject_results = await query "select * where { #{sparql_uri_escape subject} ?predicate ?object }"
+		subject_results = await query """
+				select ?predicate ?object ?objectRedirectsTo where {
+				#{sparql_uri_escape subject} ?predicate ?object .
+				OPTIONAL { ?object dbo:wikiPageRedirects ?objectRedirectsTo }
+			}"""
 		for identifier from subject_results
 			if relevant_predicates.includes identifier.predicate
+				# Some basic escaping (leading asterisks, whitespace...)
+				object = (identifier.objectRedirectsTo or identifier.object)
+					.replace(/&[a-zA-Z]+;/g, '')
+					.replace(/\n/g, ';')
+					.replace(/ +/g, ' ')
+					.replace(/(^|;) *\*? */g, '$1')
+					.replace(/(^|;);/g, '$1')
+					.trim()
+				if not object
+					continue
 				if data_row[identifier.predicate]
-					data_row[identifier.predicate] = data_row[identifier.predicate] + "," + identifier.object
+					data_row[identifier.predicate].push object
 				else
-					data_row[identifier.predicate] = identifier.object
+					data_row[identifier.predicate] = [ object ]
+		for predicate, values of data_row
+			if Array.isArray(values)
+				data_row[predicate] = values.map((v) => v.split(';')).flat().filter(Boolean).uniq().sort().join ';'
 
 	console.debug gray dim 'write out json...'
 	await writeFile "data/data-#{resource_name}.json", JSON.stringify

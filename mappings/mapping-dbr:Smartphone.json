@@ -1424,19 +1424,19 @@
     "relevant_predicates": [
         {
             "predicate": "dbo:cpu",
-            "mapTo": "dbp:cpu"
+            "mapTo": "cpu"
         },
         {
             "predicate": "dbo:manufacturer",
-            "mapTo": "dbp:manufacturer"
+            "mapTo": "manufacturer"
         },
         {
             "predicate": "dbo:operatingSystem",
-            "mapTo": "dbp:operatingSystem"
+            "mapTo": "operatingSystem"
         },
         {
             "predicate": "dbo:weight",
-            "mapTo": "dbp:weight"
+            "mapTo": "weight"
         },
         {
             "predicate": "dbp:camera",
@@ -1491,11 +1491,11 @@
         },
         {
             "predicate": "dbo:predecessor",
-            "mapTo": "dbp:predecessor"
+            "mapTo": "predecessor"
         },
         {
             "predicate": "dbo:successor",
-            "mapTo": "dbp:successor"
+            "mapTo": "successor"
         },
         {
             "predicate": "dbp:cpu",
@@ -1684,7 +1684,7 @@
         },
         {
             "predicate": "dbo:releaseDate",
-            "mapTo": "dbp:releaseDate"
+            "mapTo": "releaseDate"
         },
         {
             "predicate": "dbp:after",
@@ -2043,7 +2043,7 @@
         },
         {
             "predicate": "dbo:developer",
-            "mapTo": "dbp:manufacturer"
+            "mapTo": "manufacturer"
         },
         {
             "predicate": "dbp:navigation",
@@ -2378,7 +2378,7 @@
         },
         {
             "predicate": "dbo:designer",
-            "mapTo": "dbp:design"
+            "mapTo": "design"
         },
         {
             "predicate": "dbp:compatibleNetwork",

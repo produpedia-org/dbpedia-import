@@ -8,6 +8,7 @@ prefixes = [
 	{ resource: "http://dbpedia.org/ontology/", shorty: "dbo:" }
 	{ resource: "http://dbpedia.org/resource/", shorty: "dbr:" }
 	{ resource: "http://dbpedia.org/property/", shorty: "dbp:" }
+	{ resource: "http://dbpedia.org/datatype/", shorty: "dt:" }
 	{ resource: "http://www.w3.org/2001/XMLSchema#", shorty: "xsd:" }
 	{ resource: "http://www.w3.org/2002/07/owl#", shorty: "owl:" }
 	{ resource: "http://www.wikidata.org/entity/", shorty: "wikidata:" }
@@ -74,7 +75,17 @@ export default (query) =>
 	results = json.results.bindings.map (row) =>
 		t = {}
 		for prop, propvalue of row
-			t[prop] = prefix_resource(propvalue.value) + if propvalue['xml:lang'] then "@#{propvalue['xml:lang']}" else ''
+			t[prop] = prefix_resource(propvalue.value) +
+				(if propvalue['xml:lang'] then "@#{propvalue['xml:lang']}" else '') +
+				(if propvalue.datatype and
+					propvalue.type != 'uri' and
+					propvalue.datatype != 'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString' and
+					propvalue.datatype != 'http://www.w3.org/2001/XMLSchema#integer' and
+					propvalue.datatype != 'http://www.w3.org/2001/XMLSchema#double' and
+					propvalue.datatype != 'http://www.w3.org/2001/XMLSchema#date'
+						"[[#{prefix_resource propvalue.datatype}]]"
+				else
+					'')
 			# if t[prop].includes 'http'
 			# 	console.warn magenta "#{t[prop]} includes 'http' even after prefixing"
 			# 	await readLine 'continue...' # doesnt work in this spot, for some reason

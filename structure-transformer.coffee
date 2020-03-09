@@ -6,6 +6,7 @@ import { input as readLine } from "https://raw.githubusercontent.com/phil294/rea
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
 writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
 import query from './query.js'
+import { moment } from "https://deno.land/x/moment/moment.ts"
 
 do =>
 	resource_name = Deno.args[1]
@@ -27,15 +28,15 @@ do =>
 	predicates_from_data = json.predicates
 	data = json.rows
 
-	### predicates that arent mapped to another predicate ###
-	base_predicates = relevant_predicates
-		.filter (p) => not p.mapTo
-		.map (p) => p.predicate
-	invalidly_mapped_predicate = relevant_predicates
-		.filter (p) => p.mapTo
-		.find (p) => not base_predicates.includes p.mapTo
-	if invalidly_mapped_predicate
-		throw "Mapping for relevant predicate '#{invalidly_mapped_predicate.predicate}' is invalid: Target mapping '#{invalidly_mapped_predicate.mapTo}' does not exist or is mapped itself"
+	### target mapping targets become the new base predicates ###
+	base_predicates = [
+		...relevant_predicates
+			.filter (p) => not p.mapTo
+			.map 'predicate'
+	,
+		...relevant_predicates
+			.map 'mapTo'
+	].filter(Boolean).uniq()
 	base_predicates.unshift 'resource'
 		
 	transformed_data = []
@@ -48,6 +49,26 @@ do =>
 		for predicate from relevant_predicates
 			value = row[predicate.predicate]
 			if value
+				if predicate.type == 'date'
+					value = value
+						.split(';')
+						.map((v) =>
+							if v.length < 4
+								return v
+							date = Date.parse v
+							# chrono also works as a nice fallback
+							# (with import 'https://cdn.jsdelivr.net/npm/chrono-node@1.4.3/chrono.min.js')
+							# but v8 Date.parse actually supports stuff like
+							# "February 2019" natively (contrary to Firefox), so
+							# native Date parse suffices here
+							# date = window.chrono.parseDate v
+							if date
+								date = moment(date).format 'YYYY-MM-DD'
+							else
+								date = v
+							date
+						)
+						.join(';')
 				if predicate.mapTo
 					if transformed_row[predicate.mapTo]
 						transformed_row[predicate.mapTo] = transformed_row[predicate.mapTo] + "," + value
@@ -59,10 +80,10 @@ do =>
 					else
 						transformed_row[predicate.predicate] = value
 	
-	# remove duplicate values
+	# each row: remove duplicate values & sort them
 	for row from transformed_data
 		for predicate, values of row
-			row[predicate] = [...new Set(values.split ',')].sort().join ','
+			row[predicate] = values.split(';').uniq().sort().join ';'
 
 	console.debug gray dim 'write out json...'
 	await writeFile "data/data-#{resource_name}-transformed.json", JSON.stringify
