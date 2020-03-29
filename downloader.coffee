@@ -45,6 +45,8 @@ do =>
 		.map (r) => r.redirectsTo or r.subject
 		.uniq()
 
+	labels = {}
+
 	console.debug "get each relevant values"
 	for subject, i in subjects
 		data_row = {}
@@ -52,9 +54,10 @@ do =>
 		data_row.resource = subject
 		console.debug dim "#{i+1} / #{subjects.length}"
 		subject_results = await query """
-				select ?predicate ?object ?objectRedirectsTo where {
+				select ?predicate ?object ?objectRedirectsTo ?objectLabel where {
 				#{sparql_uri_escape subject} ?predicate ?object .
-				OPTIONAL { ?object dbo:wikiPageRedirects ?objectRedirectsTo }
+				OPTIONAL { ?object dbo:wikiPageRedirects ?objectRedirectsTo } .
+				OPTIONAL { ?object rdfs:label ?objectLabel } .
 			}"""
 		for identifier from subject_results
 			if relevant_predicates.includes identifier.predicate
@@ -72,6 +75,8 @@ do =>
 					data_row[identifier.predicate].push object
 				else
 					data_row[identifier.predicate] = [ object ]
+				if identifier.objectLabel
+					labels[object] = identifier.objectLabel
 		for predicate, values of data_row
 			if Array.isArray(values)
 				data_row[predicate] = values.map((v) => v.split(';')).flat().filter(Boolean).uniq().sort().join ';'
@@ -80,3 +85,4 @@ do =>
 	await writeFile "data/data-#{resource_name}.json", JSON.stringify
 		predicates: [ 'resource', ...relevant_predicates ]
 		rows: data
+		labels: labels

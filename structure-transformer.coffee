@@ -1,7 +1,5 @@
 import './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
-# import { input } from 'https://raw.githubusercontent.com/johnsonjo4531/read_lines/v2.1.0/input.ts'
-import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
 # import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
 writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
@@ -27,6 +25,7 @@ do =>
 		Deno.exit 3
 	predicates_from_data = json.predicates
 	data = json.rows
+	labels = json.labels
 
 	### target mapping targets become the new base predicates ###
 	base_predicates = [
@@ -38,14 +37,19 @@ do =>
 			.map 'mapTo'
 	].filter(Boolean).uniq()
 	base_predicates.unshift 'resource'
-		
+	base_predicates.unshift 'rdfs:label'
+	
 	transformed_data = []
 	for row from data
 		if irrelevant_subjects.includes row.resource
 			continue
 		transformed_row = {}
-		transformed_data.push transformed_row
 		transformed_row.resource = row.resource
+		transformed_row['rdfs:label'] = row['rdfs:label']
+		if not transformed_row['rdfs:label']
+			console.warn "#{row.resource} does not have an rdfs:label!"
+			continue
+		transformed_data.push transformed_row
 		for predicate from relevant_predicates
 			value = row[predicate.predicate]
 			if value
@@ -89,3 +93,6 @@ do =>
 	await writeFile "data/data-#{resource_name}-transformed.json", JSON.stringify
 		predicates: base_predicates
 		rows: transformed_data
+		# todo: could save space by omitting the labels for those objects that
+		# are now gone
+		labels: labels
