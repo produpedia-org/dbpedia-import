@@ -54,10 +54,11 @@ do =>
 		data_row.resource = subject
 		console.debug dim "#{i+1} / #{subjects.length}"
 		subject_results = await query """
-				select ?predicate ?object ?objectRedirectsTo ?objectLabel where {
+				select ?predicate ?object ?objectRedirectsTo ?objectLabel ?predicateLabel where {
 				#{sparql_uri_escape subject} ?predicate ?object .
 				OPTIONAL { ?object dbo:wikiPageRedirects ?objectRedirectsTo } .
 				OPTIONAL { ?object rdfs:label ?objectLabel } .
+				OPTIONAL { ?predicate rdfs:label ?predicateLabel } .
 			}"""
 		for identifier from subject_results
 			if relevant_predicates.includes identifier.predicate
@@ -77,6 +78,13 @@ do =>
 					data_row[identifier.predicate] = [ object ]
 				if identifier.objectLabel
 					labels[object] = identifier.objectLabel
+				# console.dir identifier
+				if identifier.predicateLabel
+					# This will be done unnecessarily over and over again, only
+					# would need this once per predicate
+					# but that's ok as the performance problem is
+					# neglectible here
+					labels[identifier.predicate] = identifier.predicateLabel
 		for predicate, values of data_row
 			if Array.isArray(values)
 				data_row[predicate] = values.map((v) => v.split(';')).flat().filter(Boolean).uniq().sort().join ';'
