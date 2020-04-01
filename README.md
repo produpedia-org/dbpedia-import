@@ -7,3 +7,4 @@ Just like Python, just cooler.
 probably deno will be able to read/compile coffeescript files natively at some point so this will be only
 `deno mapping_generator.coffee` but this doesnt work yet
 ```
+You will also find a first large mapping file. Mapping files define which DBpedia predicates are considered relevant, defining for this class or irrelevant. The predicates are also partly mapped to each other and provided with meta infos like unit or name. This is also highly experimental and will probably move to another repository later on.
