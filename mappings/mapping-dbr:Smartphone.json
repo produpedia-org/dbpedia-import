@@ -1427,16 +1427,43 @@
             "mapTo": "cpu"
         },
         {
+            "predicate": "cpu",
+            "mapTo": null,
+            "type": "resource",
+            "name": "CPU"
+        },
+        {
             "predicate": "dbo:manufacturer",
             "mapTo": "manufacturer"
+        },
+        {
+            "predicate": "manufacturer",
+            "mapTo": null,
+            "type": "resource",
+            "name": "Manufacturer"
         },
         {
             "predicate": "dbo:operatingSystem",
             "mapTo": "operatingSystem"
         },
         {
+            "predicate": "operatingSystem",
+            "mapTo": null,
+            "type": "resource",
+            "name": "Operating System"
+        },
+        {
             "predicate": "dbo:weight",
             "mapTo": "weight"
+        },
+        {
+            "predicate": "weight",
+            "mapTo": null,
+            "type": "number",
+            "name": "Weight",
+            "unit": "gram",
+            "min": 1,
+            "float": true
         },
         {
             "predicate": "dbp:camera",
@@ -1444,18 +1471,15 @@
         },
         {
             "predicate": "dbp:connectivity",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:display",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:input",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:releasedate",
@@ -1467,8 +1491,7 @@
         },
         {
             "predicate": "dbp:media",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:power",
@@ -1494,8 +1517,20 @@
             "mapTo": "predecessor"
         },
         {
+            "predicate": "predecessor",
+            "mapTo": null,
+            "type": "resource",
+            "name": "Predecessor"
+        },
+        {
             "predicate": "dbo:successor",
             "mapTo": "successor"
+        },
+        {
+            "predicate": "successor",
+            "mapTo": null,
+            "type": "resource",
+            "name": "Successor"
         },
         {
             "predicate": "dbp:cpu",
@@ -1513,8 +1548,7 @@
         },
         {
             "predicate": "dbp:music",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:service",
@@ -1522,8 +1556,7 @@
         },
         {
             "predicate": "dbp:sound",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:storage",
@@ -1533,8 +1566,7 @@
         },
         {
             "predicate": "dbp:video",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:volume",
@@ -1603,8 +1635,7 @@
         },
         {
             "predicate": "dbp:rearCamera",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:gpu",
@@ -1614,8 +1645,7 @@
         },
         {
             "predicate": "dbp:size",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:carriers",
@@ -1637,8 +1667,7 @@
         },
         {
             "predicate": "dbp:other",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:2ndCamera",
@@ -1646,8 +1675,7 @@
         },
         {
             "predicate": "dbp:ringtone",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:ringtones",
@@ -1655,23 +1683,19 @@
         },
         {
             "predicate": "dbp:predecessor",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:series",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:mediaFormats",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:frontCamera",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:modelnumber",
@@ -1679,12 +1703,18 @@
         },
         {
             "predicate": "dbp:sar",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbo:releaseDate",
             "mapTo": "releaseDate"
+        },
+        {
+            "predicate": "releaseDate",
+            "mapTo": null,
+            "type": "date",
+            "name": "Release Date",
+            "description": "First known release date accross all countries"
         },
         {
             "predicate": "dbp:after",
@@ -1710,8 +1740,7 @@
         },
         {
             "predicate": "dbp:width",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:audio",
@@ -1752,7 +1781,6 @@
         {
             "predicate": "dbp:rootAccess",
             "mapTo": null,
-            "unit": "??",
             "comment": "best make this type boolean and add rootable property (arent all phones rootable some way anyway?"
         },
         {
@@ -1763,8 +1791,7 @@
         },
         {
             "predicate": "dbp:browser",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:protection",
@@ -1788,8 +1815,7 @@
         },
         {
             "predicate": "dbp:unrestrictedBootloader",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:colors",
@@ -1900,15 +1926,14 @@
         {
             "predicate": "dbp:otgSupport",
             "mapTo": null,
-            "unit": "??",
             "comment": "usb spec"
         },
         {
-            "predicate": "dbp:designer",
-            "mapTo": "dbp:design"
+            "predicate": "dbp:design",
+            "mapTo": "dbp:designer"
         },
         {
-            "predicate": "dbp:design",
+            "predicate": "dbp:designer",
             "mapTo": null,
             "unit": null,
             "type": "string"
@@ -1953,8 +1978,7 @@
         },
         {
             "predicate": "dbp:videoFormats",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:exteriorScreen",
@@ -1982,8 +2006,7 @@
         },
         {
             "predicate": "dbp:memorySlot",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:openglEsSupport",
@@ -2117,8 +2140,7 @@
         },
         {
             "predicate": "dbp:externalDisplay",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:data",
@@ -2262,8 +2284,7 @@
         },
         {
             "predicate": "dbp:wiFi",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:re;ease",
@@ -2357,8 +2378,7 @@
         },
         {
             "predicate": "dbp:height",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:totalWidth",
@@ -2378,7 +2398,13 @@
         },
         {
             "predicate": "dbo:designer",
-            "mapTo": "design"
+            "mapTo": "designer"
+        },
+        {
+            "predicate": "designer",
+            "mapTo": null,
+            "type": "resource",
+            "name": "Designer"
         },
         {
             "predicate": "dbp:compatibleNetwork",
@@ -2386,23 +2412,19 @@
         },
         {
             "predicate": "dbp:bluetooth",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:usb",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:gsmchoiceId",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:network",
-            "mapTo": null,
-            "unit": "??"
+            "mapTo": null
         },
         {
             "predicate": "dbp:networkType",
@@ -2425,7 +2447,6 @@
         "dbo:product",
         "dbp:platform",
         "dbp:platforms",
-        "rdfs:label",
         "rdfs:comment",
         "owl:sameAs",
         "dbo:wikiPageID",
