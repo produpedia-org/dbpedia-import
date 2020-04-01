@@ -1,5 +1,5 @@
 {
-  "name": "produpedia_mapping_generator",
+  "name": "Produpedia scripts for importing dat from DBpedia",
   "version": "0.1.0",
   "author": "Philip Waritschlager <philip@waritschlager.de>",
   "license": "MIT",
