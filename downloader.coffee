@@ -10,17 +10,10 @@ do =>
 	if not resource_name
 		console.error 'Please pass the case-sensitive resource as argument, e.g. "Smartphone" for mapping-dbr:Smartphone'
 		Deno.exit 1
-
-	mappings_file = "mappings/mapping-dbr:#{resource_name}.json"
-	try existing_mapping = JSON.parse await readFile mappings_file
-	if not existing_mapping
-		console.error "No matching file found (#{mappings_file})"
-		Deno.exit 2
-		
-	{ defining_identifiers, relevant_predicates } = existing_mapping
-
-	relevant_predicates = relevant_predicates.map 'predicate'
-	relevant_predicates.push 'rdfs:label'
+	
+	defining_identifiers = [
+		{ predicate: 'rdf:type', object: "dbo:#{resource_name}" }
+	]
 
 	data = []
 	
@@ -47,6 +40,8 @@ do =>
 
 	labels = {}
 
+	relevant_predicates = new Set
+
 	console.debug "get each relevant values"
 	for subject, i in subjects
 		data_row = {}
@@ -61,7 +56,8 @@ do =>
 				OPTIONAL { ?predicate rdfs:label ?predicateLabel } .
 			}"""
 		for identifier from subject_results
-			if relevant_predicates.includes identifier.predicate
+			if identifier.predicate.match(/^dbo:.+/) or identifier.predicate == 'rdfs:label'
+				relevant_predicates.add identifier.predicate
 				# Some basic escaping (leading asterisks, whitespace...)
 				object = (identifier.objectRedirectsTo or identifier.object)
 					.replace(/&[a-zA-Z]+;/g, '')
