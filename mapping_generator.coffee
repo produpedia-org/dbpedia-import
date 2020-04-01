@@ -4,42 +4,34 @@
 # probably deno will be able to read/compile coffeescript files natively at some point so this will be only
 # `deno mapping_generator.coffee` but this doesnt work yet
 
-import './global.js'
+import { readLine } from './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
-# import { input } from 'https://raw.githubusercontent.com/johnsonjo4531/read_lines/v2.1.0/input.ts'
-import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
-# import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
+
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
 writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
 import query from './query.js'
 
 ###
-TODOs
-- omit mappingbased? (/ontology/* for all s p o), as this parses everything anyway. would there be any values lost by doing so?
-	  or other way round, subtraction so all in best possible quality but no dups?
-	  or maybe work with mappings only
-- when querying: label etc @lang?
-	- find and add predicates that always apply to relevant_predicates
-- dbp:imagesize??
-- range vs array vs single value
-- add all defining_identifiers to relevant_predicates, e.g. <form>
-- from finished mappings, which definings can be removed? statisticssss
+Some small TODOs and notes to self while this whole thing is still in development.
 - skip option e.g. while iterating over subject props when subject not valid
 - undefining_identifiers, undefining_predicates
 
 strategy:
-- mapping generator on 2016
-- mapping generator on latest: dbpedia live or better, latest databus dumps
-      merge properly
-- get data as table
-- mapping transformer: automizable stuff, e.g. same-as-ize predicates
-- commit data on new branch
-- manual transformations
-- commit/merge data onto dbpedia branch
-- merge dbpedia into master
+revised:
+data-X-transformed-manually						- present: [data (just in case)], final output
+mapping_generator > data-X						- mapping generator on latest databus collection
+													defining_identifiers OR single categories enough?
+json_to_csv										- temporary, while writing transforms: get data as table via
+find_irrelevant_subjects						- debugging
+structure-transformer > data-X-transformed		- mapping transformer: automizable stuff, e.g. same-as-ize predicates; autom value transforms
+manual-transformer > data-X-transformed-manually- manual transformations based on last data diff: if any row value changes/deletes/adds, prompt. simple as that
+diff_datas > data-X-diff						- diff to last output
+												- check/edit diff
+												- apply diff to db
 ###
 
 class RelevantPredicate
+	# TODO: Automatically extract and save name, description, unit etc. from dbo: predicates
 	constructor: (@predicate, @mapTo = null, @export = false, @unit = "", @structured = false) ->
 
 open_subjects = new Set

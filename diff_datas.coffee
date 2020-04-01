@@ -1,11 +1,16 @@
 import './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
-# import { input } from 'https://raw.githubusercontent.com/johnsonjo4531/read_lines/v2.1.0/input.ts'
 import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
-# import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"
 writeFile = (file, txt) => Deno.writeFile(file, (new TextEncoder()).encode(txt)) # ^ integrate?
-import query from './query.js'
+import query, { sparql_uri_escape } from './query.js'
+
+
+###
+This script writes the diff betweeen two value jsons out into diff.json.
+The input value jsons are currently not parsed as arguments but hard coded
+below since I am not sure whether to keep this script at all.
+### 
 
 do =>
 	json_2016 = JSON.parse await readFile "data/data-Smartphone-transformed_2016.json"
@@ -20,8 +25,19 @@ do =>
 	resources_2016 = json_2016.rows.map 'resource'
 	# predicates = json_2019.predicates
 
-	deleted_resources = resources_2016.filter (resource) =>
-		not resources_2019.includes resource
+	deleted_resources = []
+	for resource from resources_2016
+		if not resources_2019.includes resource
+			# this is useless but works: most deleted resources got deleted because some redirects changed
+			# others because the wikipedia article actually got deleted
+			# so to find any other causes, this might help: omit redirected deletes from the diff:
+			##redirects_somewhere_else = await query "select ?o { #{sparql_uri_escape resource} dbo:wikiPageRedirects ?o }"
+			##if redirects_somewhere_else.length
+			deleted_resources.push resource
+			## else check for wikipedia offline?
+			## ... need to check for infobox properties mapped  
+			##else
+				##deleted_resources.push "???????????????????????#{resource}"
 
 	added_rows = json_2019.rows.filter (row) =>
 		not resources_2016.includes row.resource
@@ -52,7 +68,8 @@ do =>
 			.filter (p) =>
 				not predicates1.includes p
 			.map (p) =>
-				row2[p]
+				predicate: p
+				to: row2[p]
 
 		kept_predicates = predicates1.filter (p) =>
 			predicates2.includes p
@@ -70,8 +87,8 @@ do =>
 				delete changes[k]
 		
 		if Object.keys(changes).length
-			#console.log row1.resource, changes
-			#await readLine 'continue...'
+			console.log row1.resource, changes
+			await readLine 'continue...'
 			changed_rows.push
 				resource: row1.resource
 				diffs: changes

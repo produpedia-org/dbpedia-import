@@ -1,4 +1,4 @@
-import './global.js'
+import { readLine } from './global.js'
 import { gray, yellow, italic, green, magenta, dim } from "https://deno.land/std/fmt/colors.ts"
 # import readFile from "https://raw.githubusercontent.com/muhibbudins/deno-readfile/master/index.ts"
 import readFile from "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts"

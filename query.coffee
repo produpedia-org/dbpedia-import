@@ -1,5 +1,5 @@
+import { readLine } from './global.js'
 import { gray, red, magenta } from "https://deno.land/std/fmt/colors.ts"
-import { input as readLine } from "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts"
 
 ### also see
 http://prefix.cc/popular/all.file.sparql

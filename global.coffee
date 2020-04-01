@@ -1,5 +1,8 @@
-# in case you wonder: the answer is yes.
+import { readLines } from "https://deno.land/std/io/bufio.ts"
 
+#######################################
+###### Global declarations
+# in case you wonder: the answer is yes.
 Object.defineProperty Array.prototype, 'delete',
 	enumerable: false
 	value: (val) ->
@@ -22,3 +25,9 @@ Object.defineProperty Array.prototype, 'uniq',
 
 window.sleep = (ms) =>
 	new Promise (ok) => setTimeout ok, ms
+
+#######################################
+
+export readLine = (prompt) =>
+	console.log prompt
+	(await readLines(Deno.stdin).next()).value
