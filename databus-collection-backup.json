@@ -1,0 +1,346 @@
+{
+    "uri": "https://databus.dbpedia.org/phil294/collections/dbpedia-latest-core-produpedia",
+    "label": "Sources for import to Produpedia.org",
+    "abstract": "This collection includes only those values that are needed to generate the tables @ produpedia.org (WIP)",
+    "description": "This collection includes only those values that are needed to generate the tables @ produpedia.org (WIP)",
+    "content": {
+        "groups": [
+            {
+                "uri": "https://databus.dbpedia.org/dbpedia/generic",
+                "artifacts": [
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/generic/infobox-properties",
+                        "label": "infobox-properties dataset",
+                        "settings": []
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/generic/labels",
+                        "label": "labels dataset",
+                        "settings": []
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/generic/redirects",
+                        "label": "redirects dataset",
+                        "settings": []
+                    }
+                ],
+                "label": "dbpedia » generic",
+                "settings": [
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/core#compression",
+                        "value": "bzip2",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/core#formatExtension",
+                        "value": "ttl",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/cv#lang",
+                        "value": "en",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://purl.org/dc/terms/hasVersion",
+                        "value": "$latest",
+                        "checked": true
+                    }
+                ]
+            },
+            {
+                "uri": "https://databus.dbpedia.org/dbpedia/mappings",
+                "artifacts": [
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/mappings/instance-types",
+                        "label": "DBpedia Ontology instance types",
+                        "settings": [
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#tag",
+                                "value": "specific",
+                                "checked": true
+                            },
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#tag",
+                                "value": "debug",
+                                "checked": true
+                            },
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#tag",
+                                "value": "commons",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/mappings/mappingbased-literals",
+                        "label": "Literals extracted with mappings",
+                        "settings": []
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/mappings/mappingbased-objects",
+                        "label": "Cleaned object properties extracted with mappings",
+                        "settings": []
+                    }
+                ],
+                "label": "dbpedia » mappings",
+                "settings": [
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/core#compression",
+                        "value": "bzip2",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/cv#lang",
+                        "value": "en",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://purl.org/dc/terms/hasVersion",
+                        "value": "$latest",
+                        "checked": true
+                    }
+                ]
+            },
+            {
+                "uri": "https://databus.dbpedia.org/dbpedia/transition",
+                "artifacts": [],
+                "label": "dbpedia » transition",
+                "settings": [
+                    {
+                        "facet": "http://dataid.dbpedia.org/ns/cv#lang",
+                        "value": "en",
+                        "checked": true
+                    },
+                    {
+                        "facet": "http://purl.org/dc/terms/hasVersion",
+                        "value": "$latest",
+                        "checked": true
+                    }
+                ]
+            },
+            {
+                "uri": "https://databus.dbpedia.org/dbpedia/text",
+                "artifacts": [],
+                "label": "dbpedia » text",
+                "settings": []
+            },
+            {
+                "uri": "https://databus.dbpedia.org/propan/lhd",
+                "artifacts": [
+                    {
+                        "uri": "https://databus.dbpedia.org/propan/lhd/linked-hypernyms",
+                        "label": "Linked Hypernyms Dataset (LHD)",
+                        "settings": [
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#type",
+                                "value": "core",
+                                "checked": true
+                            },
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#type",
+                                "value": "extension",
+                                "checked": true
+                            },
+                            {
+                                "facet": "http://dataid.dbpedia.org/ns/cv#lang",
+                                "value": "en",
+                                "checked": true
+                            }
+                        ]
+                    }
+                ],
+                "label": "propan » lhd",
+                "settings": [
+                    {
+                        "facet": "http://purl.org/dc/terms/hasVersion",
+                        "value": "$latest",
+                        "checked": true
+                    }
+                ]
+            },
+            {
+                "uri": "https://databus.dbpedia.org/denis/ontology",
+                "artifacts": [],
+                "label": "denis » ontology",
+                "settings": [
+                    {
+                        "facet": "http://purl.org/dc/terms/hasVersion",
+                        "value": "$latest",
+                        "checked": true
+                    }
+                ]
+            }
+        ],
+        "customQueries": [],
+        "generatedQuery": {
+            "root": {
+                "uri": null,
+                "property": null,
+                "childNodes": [
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/generic",
+                        "property": "dataid:group",
+                        "childNodes": [
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/generic/infobox-properties",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            },
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/generic/labels",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            },
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/generic/redirects",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            }
+                        ],
+                        "facetSettings": {
+                            "http://dataid.dbpedia.org/ns/core#compression": [
+                                {
+                                    "value": "bzip2",
+                                    "checked": true
+                                }
+                            ],
+                            "http://dataid.dbpedia.org/ns/core#formatExtension": [
+                                {
+                                    "value": "ttl",
+                                    "checked": true
+                                }
+                            ],
+                            "http://dataid.dbpedia.org/ns/cv#lang": [
+                                {
+                                    "value": "en",
+                                    "checked": true
+                                }
+                            ],
+                            "http://purl.org/dc/terms/hasVersion": [
+                                {
+                                    "value": "$latest",
+                                    "checked": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/dbpedia/mappings",
+                        "property": "dataid:group",
+                        "childNodes": [
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/mappings/instance-types",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            },
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/mappings/mappingbased-literals",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            },
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/mappings/mappingbased-objects",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {}
+                            }
+                        ],
+                        "facetSettings": {
+                            "http://dataid.dbpedia.org/ns/core#compression": [
+                                {
+                                    "value": "bzip2",
+                                    "checked": true
+                                }
+                            ],
+                            "http://dataid.dbpedia.org/ns/cv#lang": [
+                                {
+                                    "value": "en",
+                                    "checked": true
+                                }
+                            ],
+                            "http://purl.org/dc/terms/hasVersion": [
+                                {
+                                    "value": "$latest",
+                                    "checked": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/propan/lhd",
+                        "property": "dataid:group",
+                        "childNodes": [
+                            {
+                                "uri": "https://databus.dbpedia.org/propan/lhd/linked-hypernyms",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {
+                                    "http://dataid.dbpedia.org/ns/cv#lang": [
+                                        {
+                                            "value": "en",
+                                            "checked": true
+                                        }
+                                    ],
+                                    "http://dataid.dbpedia.org/ns/cv#type": [
+                                        {
+                                            "value": "core",
+                                            "checked": true
+                                        },
+                                        {
+                                            "value": "extension",
+                                            "checked": true
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "facetSettings": {
+                            "http://purl.org/dc/terms/hasVersion": [
+                                {
+                                    "value": "$latest",
+                                    "checked": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/denis/ontology",
+                        "property": "dataid:group",
+                        "childNodes": [],
+                        "facetSettings": {
+                            "http://purl.org/dc/terms/hasVersion": [
+                                {
+                                    "value": "$latest",
+                                    "checked": true
+                                }
+                            ],
+                            "http://dataid.dbpedia.org/ns/core#formatExtension": [
+                                {
+                                    "value": "owl",
+                                    "checked": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "facetSettings": {}
+            }
+        }
+    },
+    "issued": "1597519095293",
+    "created": "1586876554669",
+    "modified": "1598034167143",
+    "statistics": {
+        "fileCount": 12,
+        "licenses": [
+            "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+        ],
+        "size": 1626980483
+    }
+}
