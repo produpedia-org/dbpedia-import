@@ -1,4 +1,3 @@
-import { readLine } from './global.js'
 import { gray, red, magenta } from "https://deno.land/std/fmt/colors.ts"
 
 ### also see
@@ -12,6 +11,7 @@ prefixes = [
 	{ resource: "http://www.w3.org/2001/XMLSchema#", shorty: "xsd:" }
 	{ resource: "http://www.w3.org/2002/07/owl#", shorty: "owl:" }
 	{ resource: "http://www.wikidata.org/entity/", shorty: "wikidata:" }
+	{ resource: "http://wikidata.dbpedia.org/resource/", shorty: "dbrwikidata:" }
 	{ resource: "http://dbpedia.org/class/yago/", shorty: "yago:" }
 
 	{ resource: "http://purl.org/dc/terms/", shorty: "dct:" }
@@ -32,7 +32,7 @@ prefixes = [
 
 prefix_resource = (entity) =>
 	for { resource, shorty } in prefixes
-		entity = entity.replace resource, shorty
+		entity = entity.replaceAll resource, shorty
 	entity
 
 sparql_prefixes = prefixes
@@ -43,20 +43,22 @@ export sparql_uri_escape = (uri) =>
 	# todo probably not complete
 	uri.replace /([,()+'/&.])/g, '\\$1'
 
-export default (query) =>
+export default (query, base_uri = "http://store:8890") =>
 	console.debug gray 'querying...'
 	if query.includes 'http'
 		console.warn query
 		console.warn magenta "query includes 'http'"
-		await readLine 'continue...'
+		# Deno.exit(44)
+		# await readLine 'continue...'
 
 	format = encodeURIComponent "application/sparql-results+json"
 	# format = encodeURIComponent "text/csv"
-	timeout = 10000
+	timeout = 100000000 # 10000
 	# default_graph_uri = encodeURIComponent "http://dbpedia.org"
 	default_graph_uri = ""
 	# base_uri = "https://dbpedia.org"
-	base_uri = "http://localhost:8891"
+	# base_uri = "http://localhost:8891"
+	# base_uri = "http://store:8890"
 	# query = "select * { ?s ?o ?p . } limit 10"
 	query = encodeURIComponent "#{sparql_prefixes}\n#{query}"
 	
@@ -70,7 +72,8 @@ export default (query) =>
 	json = try await resp.json()
 	if not json
 		console.error query
-		console.error red await resp.text()
+		# console.error red await resp.text() # throws with deno 1.0 idk
+		console.error red JSON.stringify resp
 		throw new Error "is not json"
 	results = json.results.bindings.map (row) =>
 		t = {}
@@ -96,5 +99,6 @@ export default (query) =>
 	if resp.headers.has 'X-SPARQL-MaxRows'
 		console.warn magenta "X-SPARQL-MaxRows is set: Return size exceeded return size. This output is truncated."
 		await readLine 'continue...'
+		# Deno.exit(45)
 	
 	results

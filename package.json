@@ -1,5 +1,5 @@
 {
-  "name": "Produpedia scripts for importing dat from DBpedia",
+  "name": "produpedia_scripts_for_importing_data_from_dbpedia",
   "version": "0.1.0",
   "author": "Philip Waritschlager <philip@waritschlager.de>",
   "license": "MIT",

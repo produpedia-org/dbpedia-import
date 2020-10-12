@@ -1,23 +1,6 @@
 {
-  "https://deno.land/std/testing/format.ts": "6e1813ddbaec6b08b35cfe9cfa1d0650400710803e1e2dccf400a0ac3dcde586",
-  "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/input.ts": "fad92074dca9e42378d7e8da247aef1c105a9aec6f33c1e3150db1a057c3ab14",
-  "https://deno.land/std/strings/encode.ts": "9ba527756bb795890e9bec4aa4abeb137897cc41750fc5bdba257763cb7d7806",
-  "https://deno.land/std/path/win32.ts": "2154bcf9e4c35465216e620f20fcd4e736800bbac0cc96ab3dd9e21e96549d92",
-  "https://deno.land/std/textproto/mod.ts": "7764179d5a9a5ce2174a3f6de9a6ff3d184d4cdf3ba0be252e39b91fd0ba45d4",
-  "https://deno.land/std/io/util.ts": "feeec7b24e7185cbb8b0700a23d4f7363d4567c18b052f2a160ea77136b0c6eb",
-  "https://deno.land/std/testing/diff.ts": "a4c723ce92467507ada670c23dbaa08444315253230d1c9e77b6dc70080a59fa",
-  "https://deno.land/std/path/posix.ts": "226bad819732a2487a3c9cab36b53b3124b681cac8668b44732a16254cc467d5",
-  "https://raw.githubusercontent.com/phil294/read_lines/v3.0.1/lines.ts": "f6fcdf436e640c7aae9550a303de158d74d8635bc584931a33247c647adb29d2",
-  "https://deno.land/std/strings/mod.ts": "7b0f444ff8f05f067a02fd9b5822fd9a6da57a4ef9b020d9e40134cba08206e7",
-  "https://deno.land/std/path/glob.ts": "049734719b0b9a3078bf39ff7ac757ffb5f3759aba05f768a7fa2b6eb2942366",
-  "https://deno.land/std/path/mod.ts": "af5d837faab21809f0391aebd43cc1e9ad5e5bf9491f19bf822e6c8026dde0c1",
-  "https://deno.land/std/path/globrex.ts": "48e46de3fc6dee81278e03412f8a75282430aa94becd0b42498457d83af0a31e",
-  "https://deno.land/std/strings/pad.ts": "fd652c18329fd1aa49b2c3c8e685c82c32f6268fe23596afe1adf221937e8ce9",
-  "https://deno.land/std/io/bufio.ts": "5a6b32bcf8265fc6978bf15e424d1bfbbac6b867c86424e95f593317ed95b4b4",
-  "https://deno.land/std/path/utils.ts": "a3279fe5d5e688236398d7968b5da9f2015874baa2fc8da038078d0f1991718a",
-  "https://deno.land/std/fmt/colors.ts": "18aa7c3305b50dac57ee3319fc86af6738bbbd78bfd6684481422e0a2b9f78d8",
-  "https://deno.land/std/testing/asserts.ts": "390a5955ca67386b8cd2ef19cd7a5f03dc362654be0db4766f5780026433d372",
-  "https://deno.land/std/strings/decode.ts": "4f36e97ad583d2828a6b49f6a1108357eec195c4afc74dbac0e3ee3fc7dd7508",
-  "https://deno.land/std/path/constants.ts": "e42d2d2598008091f9cc7833082895a4cd9414f7cbb58144048e89a651e56ad1",
-  "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts": "e5b925b6e1322ba4350b6f80871e9261ee405446830ac0e4c88b706820dd80bb"
+  "https://deno.land/std/fmt/colors.ts": "52a9d836d0e49b05253330a6fc762b4e070b8a9f60cd6b3bc3e1f996f431d325",
+  "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts": "e5b925b6e1322ba4350b6f80871e9261ee405446830ac0e4c88b706820dd80bb",
+  "https://deno.land/x/moment/moment.ts": "8babeeebb8090391d69fc90557af1d664aec1f6e731031a42ea3447bc810c186",
+  "https://deno.land/x/moment/vendor/moment.js": "9da58a8c18cd85df9e738fbb34e705957be03a25fbf24a771dce562561de0388"
 }

@@ -1,4 +1,4 @@
-import { readLines } from "https://deno.land/std/io/bufio.ts"
+# import { readLines } from "https://deno.land/std/io/bufio.ts"
 
 #######################################
 ###### Global declarations
@@ -28,6 +28,6 @@ window.sleep = (ms) =>
 
 #######################################
 
-export readLine = (prompt) =>
-	console.log prompt
-	(await readLines(Deno.stdin).next()).value
+# export readLine = (prompt) =>
+# 	console.log prompt
+# 	(await readLines(Deno.stdin).next()).value

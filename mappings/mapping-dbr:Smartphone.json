@@ -206,6 +206,10 @@
         },
         {
             "predicate": "dct:subject",
+            "object": "dbr:Category:Android_(operating_system)_devices"
+        },
+        {
+            "predicate": "dct:subject",
             "object": "dbr:Category:Verizon_Wireless"
         },
         {
@@ -725,10 +729,6 @@
         {
             "predicate": "dbp:d",
             "object": "Q300890"
-        },
-        {
-            "predicate": "dct:subject",
-            "object": "dbr:Category:Android_(operating_system)_devices"
         },
         {
             "predicate": "rdf:type",
