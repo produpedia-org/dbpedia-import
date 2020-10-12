@@ -2,11 +2,6 @@ import './global.js'
 import { readJson, writeJson } from "https://deno.land/std/fs/mod.ts"
 import query, { sparql_uri_escape } from './query.js'
 
-xml_decode = (url) => url
-	# FIXME also rm special % chars
-	.replaceAll('_', ' ')
-
-
 do =>
 	category_tree = await readJson 'categories_4.json'
 
@@ -80,7 +75,7 @@ do =>
 				product = products[product_name] = categories: [ category ]
 			aliases = []
 			if row.redirect
-				aliases.push row.subject.replace /^dbr:/, ''
+				aliases.push row.subject
 			else
 				# TODO: Since pics are only set when the product is returned on its own,
 				# they will missing when it got here by redirect *and* it isnt part
@@ -91,31 +86,33 @@ do =>
 				product.thumbnail = row.thumbnail
 				product.depiction = row.depiction
 			if row.aliases
-				aliases.push ...row.aliases
-					.split(':::::')
-					.map((a) => a.replace /^dbr:/, '')
-					.map((a) => xml_decode(a))
+				aliases.push ...row.aliases.split(':::::')
 			if aliases.length
 				if not product.aliases
 					product.aliases = []
 				for alias from aliases
+					alias = decodeURIComponent(alias.replace(/^dbr:/, '').replaceAll('_', ' '))
 					if not product.aliases.includes alias
 						product.aliases.push alias
 		
 	await read_category category_tree
 
-	entries = Object.entries products
+	# not doing this because of heap overflow
+	# entries = Object.entries products
 
 	encoder = new TextEncoder
-	file = await Deno.open 'products.txt', { write: true, create: true }
+	file = await Deno.open 'products.txt', { write: true, create: true, truncate: true }
 
 	console.log "writing to file..."
-	entries_percentage = Math.round(entries.length / 100)
-	for entry, i in entries
-		entry[1].categories = entry[1].categories.map (c) => c.name
-		data = encoder.encode "#{JSON.stringify(entry)}\n"
+	# entries_percentage = Math.round(entries.length / 100)
+	i = 0
+	for product_name, info of products
+		info.categories = info.categories.map (c) => c.name
+		row = [ product_name, info ]
+		data = encoder.encode "#{JSON.stringify(row)}\n"
 		await Deno.write file.rid, data
-		if i % entries_percentage == 0
-			console.log Math.round(i / entries.length * 100) + "%"
+		i++
+		if i % 10000 == 0
+			console.log Math.round(i / 4100000 * 100) + "%"
 
 	Deno.close file.rid
