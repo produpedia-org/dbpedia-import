@@ -110,7 +110,7 @@ do =>
 		info.categories = info.categories.map (c) => c.name
 		row = [ product_name, info ]
 		data = encoder.encode "#{JSON.stringify(row)}\n"
-		await Deno.write file.rid, data
+		await Deno.writeAll file, data
 		i++
 		if i % 10000 == 0
 			console.log Math.round(i / 4100000 * 100) + "%"
