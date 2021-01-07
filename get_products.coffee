@@ -43,7 +43,7 @@ do =>
 			conditions = "?subject rdf:type dbo:#{category_sanitized}"
 		else
 			# todo products should have different trust value in this case (but *values* unaltered)
-			conditions = """{ ?subject gold:hypernym dbr:#{category_sanitized} } UNION 
+			conditions = """{ ?subject gold:hypernym dbr:#{category_sanitized} } UNION
 				{ ?subject dbp:type dbr:#{category_sanitized} } UNION
 				{ ?subject dbo:type dbr:#{category_sanitized} } UNION
 				{ ?subject dbp:type "#{category.name}"^^rdf:langString } UNION
@@ -66,23 +66,28 @@ do =>
 			product_name = row.redirect or row.subject
 			product_name = product_name.replace /^dbr:/, ''
 			product = products[product_name]
-			if product
+			
+			if not product
+				product = products[product_name] = categories: []
+			aliases = []
+			if row.redirect
+				aliases.push row.subject
+				# But do not push the category into product.categories, because
+				# by no means does the category of a redirect-subject also fit the
+				# redirect-object (ex. dbr:Minas_Morgul dbo:wikiPageRedirects dbr:Nazgûl,
+				# Morgul is rdf:type dbo:City, but Nazgul isnt.)
+				# But also, ignoring these leads to 0.179% data loss.
+			else
 				is_new_nonparent_category = not product.categories.some (existing_category) =>
 					category == existing_category or is_parent_category_of(category, existing_category)
 				if is_new_nonparent_category
 					product.categories.push category
-			else
-				product = products[product_name] = categories: [ category ]
-			aliases = []
-			if row.redirect
-				aliases.push row.subject
-			else
 				# TODO: Since pics are only set when the product is returned on its own,
 				# they will missing when it got here by redirect *and* it isnt part
 				# of any category on its own. Example: dbr:7th_Legion is in category dbo:Game and
 				# redirects to dbr:Seventh_Legion, which in turn is *not* in any category. In this case,
 				# there will be no thumbnail/depiction queried.
-				# This constellation is about 1.2% of all data, so not super important. 
+				# This constellation is about 1.2% of all data, so not super important.
 				product.thumbnail = row.thumbnail
 				product.depiction = row.depiction
 			if row.aliases
@@ -107,6 +112,8 @@ do =>
 	# entries_percentage = Math.round(entries.length / 100)
 	i = 0
 	for product_name, info of products
+		if not info.categories.length
+			continue
 		info.categories = info.categories.map (c) => c.name
 		row = [ product_name, info ]
 		data = encoder.encode "#{JSON.stringify(row)}\n"
