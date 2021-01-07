@@ -3,6 +3,7 @@ import { readJson, writeJson } from "https://deno.land/std/fs/mod.ts"
 import query, { sparql_uri_escape } from './query.js'
 
 do =>
+	# TODO use new json
 	category_tree = await readJson 'categories_4.json'
 
 	set_category_parents = (category) =>
@@ -106,7 +107,7 @@ do =>
 	# entries = Object.entries products
 
 	encoder = new TextEncoder
-	file = await Deno.open 'products.txt', { write: true, create: true, truncate: true }
+	file = await Deno.open 'products2.txt', { write: true, create: true, truncate: true }
 
 	console.log "writing to file..."
 	# entries_percentage = Math.round(entries.length / 100)
