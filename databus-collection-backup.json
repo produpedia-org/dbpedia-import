@@ -24,7 +24,7 @@
                         "settings": []
                     }
                 ],
-                "label": "dbpedia » generic",
+                "label": "dbpedia Â» generic",
                 "settings": [
                     {
                         "facet": "http://dataid.dbpedia.org/ns/core#compression",
@@ -83,7 +83,7 @@
                         "settings": []
                     }
                 ],
-                "label": "dbpedia » mappings",
+                "label": "dbpedia Â» mappings",
                 "settings": [
                     {
                         "facet": "http://dataid.dbpedia.org/ns/core#compression",
@@ -105,7 +105,7 @@
             {
                 "uri": "https://databus.dbpedia.org/dbpedia/transition",
                 "artifacts": [],
-                "label": "dbpedia » transition",
+                "label": "dbpedia Â» transition",
                 "settings": [
                     {
                         "facet": "http://dataid.dbpedia.org/ns/cv#lang",
@@ -122,7 +122,7 @@
             {
                 "uri": "https://databus.dbpedia.org/dbpedia/text",
                 "artifacts": [],
-                "label": "dbpedia » text",
+                "label": "dbpedia Â» text",
                 "settings": []
             },
             {
@@ -150,7 +150,7 @@
                         ]
                     }
                 ],
-                "label": "propan » lhd",
+                "label": "propan Â» lhd",
                 "settings": [
                     {
                         "facet": "http://purl.org/dc/terms/hasVersion",
@@ -162,7 +162,7 @@
             {
                 "uri": "https://databus.dbpedia.org/denis/ontology",
                 "artifacts": [],
-                "label": "denis » ontology",
+                "label": "denis Â» ontology",
                 "settings": [
                     {
                         "facet": "http://purl.org/dc/terms/hasVersion",
@@ -199,6 +199,25 @@
                                 "property": "dataid:artifact",
                                 "childNodes": [],
                                 "facetSettings": {}
+                            },
+                            {
+                                "uri": "https://databus.dbpedia.org/dbpedia/generic/geo-coordinates",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {
+                                    "http://purl.org/dc/terms/hasVersion": [
+                                        {
+                                            "value": "$latest",
+                                            "checked": true
+                                        }
+                                    ],
+                                    "http://dataid.dbpedia.org/ns/cv#lang": [
+                                        {
+                                            "value": "en",
+                                            "checked": true
+                                        }
+                                    ]
+                                }
                             }
                         ],
                         "facetSettings": {
@@ -335,12 +354,5 @@
     },
     "issued": "1597519095293",
     "created": "1586876554669",
-    "modified": "1598034167143",
-    "statistics": {
-        "fileCount": 12,
-        "licenses": [
-            "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
-        ],
-        "size": 1626980483
-    }
+    "modified": "1612134418619"
 }
