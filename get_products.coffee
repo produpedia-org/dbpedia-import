@@ -36,6 +36,7 @@ do =>
 		console.log category.name
 
 		if category.wrapper
+			# This also means that products from wrapper categories wont have these saved
 			return
 		
 		category_sanitized = sparql_uri_escape category.name
