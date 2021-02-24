@@ -1,59 +1,63 @@
 import './global.js'
-import { readJson, writeJson } from "https://deno.land/std/fs/mod.ts"
 import query, { sparql_uri_escape } from './query.js'
 
 do =>
-	# TODO use new json
-	category_tree = await readJson 'categories_4.json'
+	categories = JSON.parse(await Deno.readTextFile("categories_dump.json"))
 
-	set_category_parents = (category) =>
-		for child from category.children or []
-			child.parent = category
-			set_category_parents child
-	set_category_parents category_tree
-
-	### is target an arbitrarily deep nested child of maybe_parent? ###
-	is_parent_category_of = (maybe_parent, target) =>
-		while target.parent != maybe_parent and target.parent
-			target = target.parent
-		target.parent == maybe_parent
+	get_anchestors = (category) =>
+		anchestors = []
+		for parent from category.parents
+			anchestors.push parent
+			parent_ref = categories.find (c) => c.name == parent
+			if parent_ref
+				anchestors.push ...get_anchestors(parent_ref)
+		anchestors
+	for category from categories
+		category.anchestors = get_anchestors category
 
 	products = {}
 
 	i = 0
 
-	read_category = (category) =>
+	for category from categories
 		i++
-		# if i > 3 # for testing purposes only. TODO
-		# 	return
+		# if i > 3
+		# 	break
 		if i == 15
 			i = 0
 			console.log Object.keys(products).length
-
-		for child from category.children or []
-			await read_category child
 
 		console.log category.name
 
 		if category.wrapper
 			# This also means that products from wrapper categories wont have these saved
-			return
-		
-		category_sanitized = sparql_uri_escape category.name
+			continue
 
-		if category.ontology_only
-			conditions = "?subject rdf:type dbo:#{category_sanitized}"
-		else
-			# todo products should have different trust value in this case (but *values* unaltered)
-			conditions = """{ ?subject gold:hypernym dbr:#{category_sanitized} } UNION
+		name_to_resource = (name) =>
+			sparql_uri_escape(name[0].toUpperCase() + name.slice(1))
+		
+		name_to_non_ontology_conditions = (name) =>
+			category_sanitized = name_to_resource(name)
+			"""
+				{ ?subject gold:hypernym dbr:#{category_sanitized} } UNION
 				{ ?subject dbp:type dbr:#{category_sanitized} } UNION
 				{ ?subject dbo:type dbr:#{category_sanitized} } UNION
-				{ ?subject dbp:type "#{category.name}"^^rdf:langString } UNION
+				{ ?subject dbp:type "#{name}"^^rdf:langString } UNION
 				{ ?subject rdf:type dbr:#{category_sanitized} } UNION
-				{ ?subject rdf:type dbo:#{category_sanitized} } .
-				{ ?subject rdfs:label ?currentExistingWikiArticle }"""
+				{ ?subject rdf:type dbo:#{category_sanitized} }"""
+
+		if category.ontology_only
+			conditions = "{ ?subject rdf:type dbo:#{name_to_resource category.name} }"
+		else
+			# todo products should have different trust value in this case (but *values* unaltered)
+			conditions = name_to_non_ontology_conditions category.name
+		if category.alternative_names
+			conditions += " UNION " + category.alternative_names
+				.map (alter) => name_to_non_ontology_conditions alter
+				.join " UNION "
 		sql = """select distinct ?subject ?redirect ?thumbnail ?depiction (GROUP_CONCAT(?alias;SEPARATOR=":::::") as ?aliases) where {
 			{ #{conditions} } .
+			{ ?subject rdfs:label ?currentExistingWikiArticle } .
 			OPTIONAL { ?subject dbo:wikiPageRedirects ?redirect } .
 			OPTIONAL {
 				?wikidataSameAs owl:sameAs ?subject .
@@ -62,6 +66,7 @@ do =>
 			} .
 			OPTIONAL { ?alias dbo:wikiPageRedirects ?subject } .
 		}"""
+		# console.log sql
 		result = await query sql
 		
 		for row from result
@@ -81,7 +86,7 @@ do =>
 				# But also, ignoring these leads to 0.179% data loss.
 			else
 				is_new_nonparent_category = not product.categories.some (existing_category) =>
-					category == existing_category or is_parent_category_of(category, existing_category)
+					category == existing_category or existing_category.anchestors.includes(category.name)
 				if is_new_nonparent_category
 					product.categories.push category
 				# TODO: Since pics are only set when the product is returned on its own,
@@ -102,13 +107,11 @@ do =>
 					if not product.aliases.includes alias
 						product.aliases.push alias
 		
-	await read_category category_tree
-
 	# not doing this because of heap overflow
 	# entries = Object.entries products
 
 	encoder = new TextEncoder
-	file = await Deno.open 'products2.txt', { write: true, create: true, truncate: true }
+	file = await Deno.open 'products.txt', { write: true, create: true, truncate: true }
 
 	console.log "writing to file..."
 	# entries_percentage = Math.round(entries.length / 100)
