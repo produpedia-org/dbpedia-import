@@ -346,6 +346,48 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "uri": "https://databus.dbpedia.org/vehnem/flexifusion",
+                        "property": "dataid:group",
+                        "childNodes": [
+                            {
+                                "uri": "https://databus.dbpedia.org/vehnem/flexifusion/fusion",
+                                "property": "dataid:artifact",
+                                "childNodes": [],
+                                "facetSettings": {
+                                    "http://purl.org/dc/terms/hasVersion": [
+                                        {
+                                            "value": "$latest",
+                                            "checked": true
+                                        }
+                                    ],
+                                    "http://dataid.dbpedia.org/ns/cv#foaf": [
+                                        {
+                                            "value": "givenName",
+                                            "checked": true
+                                        },
+                                        {
+                                            "value": "gender",
+                                            "checked": true
+                                        },
+                                        {
+                                            "value": "nick",
+                                            "checked": true
+                                        },
+                                        {
+                                            "value": "page",
+                                            "checked": true
+                                        },
+                                        {
+                                            "value": "surname",
+                                            "checked": true
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "facetSettings": {}
                     }
                 ],
                 "facetSettings": {}
@@ -354,5 +396,5 @@
     },
     "issued": "1597519095293",
     "created": "1586876554669",
-    "modified": "1612134418619"
+    "modified": "1612136282463"
 }
