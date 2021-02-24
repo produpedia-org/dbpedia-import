@@ -1,6 +1,0 @@
-{
-  "https://deno.land/std/fmt/colors.ts": "52a9d836d0e49b05253330a6fc762b4e070b8a9f60cd6b3bc3e1f996f431d325",
-  "https://raw.githubusercontent.com/phil294/deno-readfile/master/index.ts": "e5b925b6e1322ba4350b6f80871e9261ee405446830ac0e4c88b706820dd80bb",
-  "https://deno.land/x/moment/moment.ts": "8babeeebb8090391d69fc90557af1d664aec1f6e731031a42ea3447bc810c186",
-  "https://deno.land/x/moment/vendor/moment.js": "9da58a8c18cd85df9e738fbb34e705957be03a25fbf24a771dce562561de0388"
-}
