@@ -1,0 +1,12 @@
+[Parameters]
+MaxMemPoolSize = 20000000000
+MaxQueryMem = 20G
+MaxVectorSize = 10000000
+NumberOfBuffers = 1063004
+MaxDirtyBuffers = 797253
+
+[SPARQL]
+ResultSetMaxRows = 100000000
+MaxQueryCostEstimationTime = 6000 ; in seconds
+MaxQueryExecutionTime = 6000 ; in seconds
+DefaultQuery = prefix gold: <http://purl.org/linguistics/gold/> . select * { dbr:Abc ?p ?o }
