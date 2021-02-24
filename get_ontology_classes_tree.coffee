@@ -4,6 +4,7 @@ import query, { sparql_uri_escape } from './query.js'
 
 do =>
 	get_children_classes = (parent) =>
+		# TODO: querying labels here is missing I think or where did they come from?
 		children = await query """select distinct ?s {
 			?s rdfs:subClassOf #{parent.name} }"""
 		parent.name = parent.name.replace /.{3}:(.+)/, '$1'
@@ -34,4 +35,4 @@ do =>
 	await get_children_classes root
 	
 	# await writeFile 'ontology_classes_tree.json', JSON.stringify root
-	await writeJson 'ontology_classes_tree.json', root, spaces: 4
+	await writeJson 'categories_.json', root, spaces: 4
